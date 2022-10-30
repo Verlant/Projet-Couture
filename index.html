@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>Accueil</title>
-  </head>
 
-  <body>
-    <header>
-      <nav id="h_navbar">
-        <div id="logo">
-          <a href="index.html">
-            <img src="assets/img/logo.png" alt="logo" class="logo_couture" />
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>Accueil</title>
+</head>
 
-        <ul id="pages">
-          <a href="evenements/evenement.html"><li>Évènement</li></a>
-          <a href="realisation/realisation.html"><li>Réalisation</li></a>
-          <a href="tuto/tuto.html"><li>Tuto</li></a>
-          <a href="a_propos.html"><li>&Agrave; propos</li></a>
-        </ul>
-        <div id="bar_recherche">
-          <img src="assets/img/Vector.png" alt="Loupe" />
-          <p>|</p>
-          <p>Rechercher...</p>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="bloc_desc"></section>
-    </main>
-    <footer>
-      <nav></nav>
-    </footer>
-  </body>
+<body>
+  <header>
+    <nav id="h_navbar">
+      <div id="logo">
+        <a href="index.html" title="Accueil Bien cousue">
+          <img src="assets/img/logo.png" alt="logo" class="logo_couture" />
+        </a>
+      </div>
+
+      <ul id="pages">
+        <a href="evenements/evenement.html">
+          <li>Évènement</li>
+        </a>
+        <a href="realisation/realisation.html">
+          <li>Réalisation</li>
+        </a>
+        <a href="tuto/tuto.html">
+          <li>Tuto</li>
+        </a>
+        <a href="a_propos.html">
+          <li>&Agrave; propos</li>
+        </a>
+      </ul>
+      <div id="bar_recherche">
+        <form action="recherche" id="form_recherche">
+        <label for="loupe"></label>
+        <input type="image" src="assets/img/Vector.png" id="loupe">
+                <p>|</p>
+
+          <label for="recherche"></label>
+          <input type="text" id="recherche" placeholder="Rechercher..." maxlength="50">
+
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="bloc_desc"></section>
+  </main>
+  <footer>
+    <nav></nav>
+  </footer>
+</body>
+
 </html>

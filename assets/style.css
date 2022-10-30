@@ -134,6 +134,7 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+
 /* reset CSS */
 
 :root {
@@ -186,27 +187,33 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .logo_couture {
   width: 87.5px;
   height: 75px;
 }
+
 a:hover {
   filter: opacity(0.8);
 }
+
 #pages {
   width: 750px;
   height: auto;
   display: flex;
   justify-content: space-between;
   font-size: 2.2em;
-  font-family: Arial, Helvetica, sans-serif; /* à modifer plus tard par "inter" */
+  font-family: Arial, Helvetica, sans-serif;
+  /* à modifer plus tard par "inter" */
   font-weight: bold;
   gap: 20px;
   color: var(--white);
 }
-#pages > a:hover {
+
+#pages>a:hover {
   color: var(--gold);
 }
+
 
 #bloc_desc {
   width: 1440px;
@@ -222,10 +229,30 @@ a:hover {
   border-radius: 100px;
   background-color: var(--gold);
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   font-size: 1.5em;
+
 }
+#form_recherche{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 225px;
+}
+
+#recherche {
+  width: 135px;
+  height: 25px;
+  background-color: var(--white);
+  border-radius: 100px;
+  border: 0px solid var(--gold);
+  color: var(--secondary-dark);
+  font-size: 0.7em;
+  padding-left: 10px;
+}
+
+
+
 
 main {
   width: 1440px;

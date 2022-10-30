@@ -1,2 +1,2 @@
 # Projet-Couture
-Site d'asso de couture pour la formation dev web | Groupe avec Ammar et Ange
+Site d'association de couture pour la formation dev web/web mobile | Groupe avec Ammar et Ange
