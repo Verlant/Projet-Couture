@@ -1,3 +1,4 @@
+/* reset CSS */
 html,
 body,
 div,
@@ -120,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -128,6 +129,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+/* reset CSS */
 
 :root {
   --primary-color: #bc8e7d;
@@ -149,9 +156,6 @@ body {
   align-items: center;
   background-color: var(--white);
 }
-
-
-
 
 header {
   width: 1440px;
@@ -182,39 +186,45 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-.logo_couture{
+.logo_couture {
   width: 87.5px;
   height: 75px;
 }
+a:hover {
+  filter: opacity(0.8);
+}
 #pages {
   width: 750px;
-  height: 50px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   font-size: 2.2em;
-  font-family: Arial, Helvetica, sans-serif;  /* à modifer plus tard par "inter" */
+  font-family: Arial, Helvetica, sans-serif; /* à modifer plus tard par "inter" */
   font-weight: bold;
   gap: 20px;
+  color: var(--white);
+}
+#pages > a:hover {
+  color: var(--gold);
 }
 
-#bloc_desc{
+#bloc_desc {
   width: 1440px;
   height: 532px;
-  background-color: var(--primary-color); 
+  background-color: var(--primary-color);
   margin-top: 100px;
 }
 
-#bar_recherche{
+#bar_recherche {
   width: 236px;
   height: 57px;
   border: 5px solid var(--secondary-light);
   border-radius: 100px;
   background-color: var(--gold);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 main {
