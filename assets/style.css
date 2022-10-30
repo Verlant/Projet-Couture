@@ -215,12 +215,6 @@ a:hover {
 }
 
 
-#bloc_desc {
-  width: 1440px;
-  height: 532px;
-  background-color: var(--primary-color);
-  margin-top: 100px;
-}
 
 #bar_recherche {
   width: 236px;
@@ -233,7 +227,8 @@ a:hover {
   font-size: 1.5em;
 
 }
-#form_recherche{
+
+#form_recherche {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -260,6 +255,30 @@ main {
   background-color: var(--primary-light);
 }
 
+#bloc_desc {
+  width: 1440px;
+  height: 532px;
+  background-color: var(--primary-color);
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#presantation {
+  width: 890px;
+  height: 382px;
+  border-radius: 25px;
+  background-color: var(--secondary-light);
+  display: flex;
+  justify-items: center;
+}
+
+#calendrier {
+  width: 397px;
+  height: 382px;
+}
+
 footer {
   width: 1440px;
   height: 283px;
@@ -269,7 +288,7 @@ footer {
   align-items: center;
 }
 
-#footer_nav{
+#footer_nav {
   width: 1290px;
   height: 227px;
   background-color: var(--secondary-color);
@@ -279,7 +298,7 @@ footer {
   align-items: center;
 }
 
-#reseaux_sociaux{
+#reseaux_sociaux {
   width: 250px;
   height: 120px;
   display: flex;
@@ -290,7 +309,7 @@ footer {
 
 }
 
-.footer_circle{
+.footer_circle {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -304,7 +323,7 @@ footer {
   font-size: 2em;
 }
 
-#legislation{
+#legislation {
   width: 335px;
   height: 120px;
   background-color: var(--white);
@@ -314,5 +333,5 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  text-align: center;  
+  text-align: center;
 }
