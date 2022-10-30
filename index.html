@@ -1,75 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Accueil</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/style.css" />
-  <title>Accueil</title>
-</head>
+  <body>
+    <header>
+      <nav id="h_navbar">
+        <div id="logo">
+          <a href="index.html" title="Accueil Bien cousue">
+            <img src="assets/img/logo.png" alt="logo" class="logo_couture" />
+          </a>
+        </div>
 
-<body>
-  <header>
-    <nav id="h_navbar">
-      <div id="logo">
-        <a href="index.html" title="Accueil Bien cousue">
-          <img src="assets/img/logo.png" alt="logo" class="logo_couture" />
-        </a>
-      </div>
+        <ul id="pages">
+          <a href="evenements/evenement.html">
+            <li>Évènement</li>
+          </a>
+          <a href="realisation/realisation.html">
+            <li>Réalisation</li>
+          </a>
+          <a href="tuto/tuto.html">
+            <li>Tuto</li>
+          </a>
+          <a href="a_propos.html">
+            <li>&Agrave; propos</li>
+          </a>
+        </ul>
+        <div id="bar_recherche">
+          <form action="recherche" id="form_recherche">
+            <label for="loupe"></label>
+            <input type="image" src="assets/img/Vector.png" id="loupe" />
+            <p>|</p>
 
-      <ul id="pages">
-        <a href="evenements/evenement.html">
-          <li>Évènement</li>
-        </a>
-        <a href="realisation/realisation.html">
-          <li>Réalisation</li>
-        </a>
-        <a href="tuto/tuto.html">
-          <li>Tuto</li>
-        </a>
-        <a href="a_propos.html">
-          <li>&Agrave; propos</li>
-        </a>
-      </ul>
-      <div id="bar_recherche">
-        <form action="recherche" id="form_recherche">
-          <label for="loupe"></label>
-          <input type="image" src="assets/img/Vector.png" id="loupe">
-          <p>|</p>
-
-          <label for="recherche"></label>
-          <input type="text" id="recherche" placeholder="Rechercher..." maxlength="50">
-
-        </form>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section id="bloc_desc">
-      <div id="presantation"></div>
-      <div id="calendrier"> <img src="assets/img/calendrier.PNG" alt=""></div>
-    </section>
-  </main>
-  <footer>
-    <nav id="footer_nav">
-      <div id="reseaux_sociaux">
-        <a href="https://fr-fr.facebook.com/reg/"><img src="assets/img/facebook.png" alt="logo facebook"></a>
-        <a href="https://twitter.com/"><img src="assets/img/tweeter.png" alt="logo tweeter"></a>
-      </div>
-      <div><a href="a_propos.html" class="footer_circle">
-          <p>Contactez</p>
-          <p>Nous</p>
-        </a></div>
-      <div><a href="realisation/forum.html"  class="footer_circle">
-          <p>Forum</p>
-          <img src="assets/img/forum.png">
-        </a></div>
-      <div id="legislation">
-        <a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570/"><p>Association à but non lucratif - Loi 1901</p></a>
-      </div>
-    </nav>
-  </footer>
-</body>
-
+            <label for="recherche"></label>
+            <input
+              type="text"
+              id="recherche"
+              placeholder="Rechercher..."
+              maxlength="50"
+            />
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="bloc_desc">
+        <div id="presentation">
+          <h1>Présentation/Description de chaque page/thème</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div id="calendrier">
+          <img src="assets/img/calendrier.PNG" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav id="footer_nav">
+        <div id="reseaux_sociaux">
+          <a href="https://fr-fr.facebook.com/reg/"
+            ><img src="assets/img/facebook.png" alt="logo facebook"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="assets/img/tweeter.png" alt="logo tweeter"
+          /></a>
+        </div>
+        <div>
+          <a href="a_propos.html" class="footer_circle">
+            <p>Contactez</p>
+            <p>Nous</p>
+          </a>
+        </div>
+        <div>
+          <a href="realisation/forum.html" class="footer_circle">
+            <p>Forum</p>
+            <img src="assets/img/forum.png" />
+          </a>
+        </div>
+        <div id="legislation">
+          <a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570/"
+            ><p>Association à but non lucratif - Loi 1901</p></a
+          >
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>

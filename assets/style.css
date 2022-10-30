@@ -210,11 +210,9 @@ a:hover {
   color: var(--white);
 }
 
-#pages>a:hover {
+#pages > a:hover {
   color: var(--gold);
 }
-
-
 
 #bar_recherche {
   width: 236px;
@@ -225,7 +223,6 @@ a:hover {
   display: flex;
   align-items: center;
   font-size: 1.5em;
-
 }
 
 #form_recherche {
@@ -246,9 +243,6 @@ a:hover {
   padding-left: 10px;
 }
 
-
-
-
 main {
   width: 1440px;
   height: calc(2407px - 483px);
@@ -265,13 +259,28 @@ main {
   align-items: center;
 }
 
-#presantation {
+#presentation {
   width: 890px;
   height: 382px;
   border-radius: 25px;
   background-color: var(--secondary-light);
   display: flex;
-  justify-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+#presentation > h1 {
+  font-size: 2em;
+  color: var(--gold);
+}
+
+#presentation > p {
+  font-size: 1.5em;
+  color: var(--white);
+  text-indent: 20px;
+  margin: 0px 25px;
 }
 
 #calendrier {
@@ -306,7 +315,6 @@ footer {
   align-items: center;
   background-color: var(--white);
   border-radius: 10px;
-
 }
 
 .footer_circle {
