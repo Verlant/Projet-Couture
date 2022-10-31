@@ -210,7 +210,7 @@ a:hover {
   color: var(--white);
 }
 
-#pages > a:hover {
+#pages>a:hover {
   color: var(--gold);
 }
 
@@ -271,12 +271,12 @@ main {
   gap: 10px;
 }
 
-#presentation > h1 {
+#presentation>h1 {
   font-size: 2em;
   color: var(--gold);
 }
 
-#presentation > p {
+#presentation>p {
   font-size: 1.5em;
   color: var(--white);
   text-indent: 20px;
@@ -288,14 +288,14 @@ main {
   height: 382px;
 }
 
-#objectifs{
+#objectifs {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
 }
 
-#objectifs_texte{
+#objectifs_texte {
   width: 890px;
   height: 395px;
   background-color: var(--secondary-light);
@@ -303,7 +303,7 @@ main {
   color: var(--gold);
 }
 
-#article_media{
+#article_media {
   width: 347px;
   height: 395px;
   border-radius: 50px;
