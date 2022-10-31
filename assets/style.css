@@ -279,7 +279,6 @@ main {
 #presentation>p {
   font-size: 1.5em;
   color: var(--white);
-  text-indent: 20px;
   margin: 0px 25px;
 }
 
@@ -288,7 +287,7 @@ main {
   height: 382px;
 }
 
-#objectifs {
+#objectifs  {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -300,7 +299,11 @@ main {
   height: 395px;
   background-color: var(--secondary-light);
   border-radius: 25px;
-  color: var(--gold);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
 }
 
 #article_media {
@@ -308,7 +311,10 @@ main {
   height: 395px;
   border-radius: 50px;
   background-color: var(--secondary-light);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer {
