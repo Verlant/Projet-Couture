@@ -258,7 +258,16 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+.p_white{
+  font-size: 1.5em;
+  color: var(--white);
+  margin: 0px 25px;
+}
 
+.h1_gold{
+  font-size: 2em;
+  color: var(--gold);
+}
 #presentation {
   width: 890px;
   height: 382px;
@@ -269,17 +278,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
-}
-
-#presentation>h1 {
-  font-size: 2em;
-  color: var(--gold);
-}
-
-#presentation>p {
-  font-size: 1.5em;
-  color: var(--white);
-  margin: 0px 25px;
 }
 
 #calendrier {
@@ -315,6 +313,31 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+}
+#bouton_play{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#section_realisation{
+  width: 1440px;
+  height: 549px;
+  background-color: var(--primary-color);
+  margin-top: 100px;
+  display: flex;
+justify-content: center;
+
+}
+
+#der_realisation{
+  width: 1074px;
+  height: 325px;
+  background-color: var(--secondary-light);
+  border-radius: 25px;
+  margin-top: 50px;
 }
 
 footer {
