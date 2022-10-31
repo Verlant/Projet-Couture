@@ -210,7 +210,7 @@ a:hover {
   color: var(--white);
 }
 
-#pages>a:hover {
+#pages > a:hover {
   color: var(--gold);
 }
 
@@ -258,14 +258,14 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-.p_white{
-  font-size: 1.5em;
+.text_white {
+  font-size: 1.7em;
   color: var(--white);
   margin: 0px 25px;
 }
 
-.h1_gold{
-  font-size: 2em;
+.text_gold {
+  font-size: 2.2em;
   color: var(--gold);
 }
 #presentation {
@@ -285,7 +285,7 @@ main {
   height: 382px;
 }
 
-#objectifs  {
+#objectifs {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -315,29 +315,70 @@ main {
   align-items: center;
   text-align: center;
 }
-#bouton_play{
+#bouton_play {
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-#section_realisation{
+#section_realisation {
   width: 1440px;
   height: 549px;
   background-color: var(--primary-color);
   margin-top: 100px;
   display: flex;
-justify-content: center;
-
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#der_realisation{
+#fleche_gauche {
+  margin-bottom: 180px;
+}
+
+#center_realisation {
+  height: 549px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#der_realisation {
   width: 1074px;
   height: 325px;
   background-color: var(--secondary-light);
   border-radius: 25px;
-  margin-top: 50px;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+#der_realisation > p {
+  justify-self: center;
+  align-self: center;
+}
+
+#like_realisation {
+  padding-right: 50px;
+  align-self: flex-end;
+}
+
+#espace_commentaire {
+  width: 409px;
+  height: 110px;
+  background-color: var(--secondary-light);
+  border-radius: 25px;
+  margin-left: 50px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fleche_droite {
+  margin-bottom: 180px;
 }
 
 footer {
