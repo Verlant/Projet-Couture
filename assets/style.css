@@ -271,15 +271,14 @@ main {
   gap: 10px;
 }
 
-#presentation > h1 {
+.h1_gold {
   font-size: 2em;
   color: var(--gold);
 }
 
-#presentation > p {
+.p_white {
   font-size: 1.5em;
   color: var(--white);
-  text-indent: 20px;
   margin: 0px 25px;
 }
 
@@ -288,27 +287,34 @@ main {
   height: 382px;
 }
 
-#objectifs{
+#objectifs {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
 }
 
-#objectifs_texte{
+#objectifs_texte {
   width: 890px;
   height: 395px;
   background-color: var(--secondary-light);
   border-radius: 25px;
-  color: var(--gold);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
 }
 
-#article_media{
+#article_media {
   width: 347px;
   height: 395px;
   border-radius: 50px;
   background-color: var(--secondary-light);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer {
