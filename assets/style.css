@@ -451,4 +451,45 @@ main {
   height: 400px;
   background-color: var(--primary-color);
 }
+
 /* Fin index*/
+
+/* page réalisation */
+
+#image_page_realisation {
+  width: 1440px;
+  height: 776px;
+}
+
+#nav_controle_2{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_bar_deux{
+  width: 1285px;
+  height: 193px;
+  background-color: var(--primary-color);
+  margin-top: 40px;
+}
+
+.li_component{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--secondary-color)
+}
+
+#list_p_lien{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: translate(0, 40px);
+}
+
+/* Fin page réalisation */
