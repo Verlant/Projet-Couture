@@ -456,10 +456,32 @@ main {
 
 /* page réalisation */
 
+#main_realisation{
+  width: 1440px;
+  height: 2858px;
+  background-color: var(--primary-light);
+}
+
+#bloc_image_realisation{
+  text-align: center;
+  transform: translate(0, -95px);
+}
+
+#titre_realisation{
+  transform: translate(0, 400px);
+  font-size: 7em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 #image_page_realisation {
   width: 1440px;
-  height: 776px;
+  height: 500spx;
+  opacity: 0.6;
+  border-radius: 20px;
+  filter: sepia(60%);
+  filter: blur(20%);
+  filter: saturate(50%);
 }
 
 #nav_controle_2 {
@@ -467,13 +489,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-#nav_bar_deux {
-  width: 1285px;
+#nav_bar_deux{
+  width: 1440px;
   height: 193px;
   background-color: var(--primary-color);
   margin-top: 40px;
+  transform: translate(0, -115px);
 }
 
 .li_component {
@@ -481,23 +505,60 @@ main {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  font-size: 1.5em;
   font-weight: bold;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 #list_p_lien {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  transform: translate(0, 40px);
+  transform: translate(0, 20px);
 }
 
-#bloc_post_realisation {
+
+.gap_li{
+  font-size: 1.8em;
+}
+
+.size_image{
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+#dimension_bloc_post{
   width: 1440px;
-  height: calc(2407px - 483px);
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloc_post_recent{
+  border: 2px solid var(--secondary-dark);
+  width: 500px;
+  height: 70px;
+  background-color: var(--gold);
+  border-radius: 100px;
+  transform: translate(0, -40px);
+  
+}
+#p_post_recent{
+  font-size: 2.5em;
+  width: 500px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
 
 
+#bloc_post_realisation{
+  width: 1440px;
+  height: 1400px;
+  margin-top: 100px;
 }
 
 #component_realisation {
@@ -512,29 +573,35 @@ main {
 .li_image_realisation {
   display: flex;
   flex-direction: column;
-  font-size: 1.7em;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   text-align: center;
   border-radius: 20px;
+  gap: 20px;
 }
 
 .image_realisation {
   border: 3px solid var(--secondary-dark);
   border-radius: 20px;
-  height: 250px;
-  width: 350px;
+  height: 300px;
+  width: 370px;
 }
 
-#voir_plus {
-  width: 274px;
-  height: 74px;
+#voir_plus{
+  width: 230px;
+  height: 70px;
   border-radius: 100px;
   background-color: var(--gold);
   font-size: 1.7em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(1150px, -80px);
 }
 
 
@@ -777,3 +844,126 @@ justify-content: center;
 
 
 /* page réalisation */
+
+/* Nos coups de coeur */
+
+#main_nos_favoris{
+  width: 1440px;
+  height: 3000px;
+  background-color: var(--primary-light);
+}
+
+#section_coup_dcoeur{
+  transform: translate(0, -70px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+  
+}
+
+.flex_realisation{
+  width: 600px;
+  height: 500px;
+  text-align: center;
+  font-size: 1.2em;
+  transform: translate(60px, 0);
+  margin-bottom: 200px;
+}
+
+.titre_coeur{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.image_coeur{
+  border: 3px solid var(--secondary-dark) ;
+  width: 518px;
+  height: 367px;
+}
+
+.texte_coeur{
+  margin-top: 35px;
+  font-weight: bold;
+}
+
+#fleche_haut_page{
+  border: 1px solid var(--secondary-dark);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-dark);
+  opacity: 50%;
+  transform: translate(1350px, -100px);
+  position: relative;
+}
+
+
+#img_haut_page{
+  width: 30px;
+  height: 30px;
+  opacity: 40%;
+  transform: rotate(90deg);
+  opacity: 100%;
+}
+
+#transition_haut_page{
+  scroll-behavior: smooth;
+}
+
+/* Fin Nos coups de coeur */
+
+/* Technique dossier Réalisation */
+
+#bloc_image_realisation_technique{
+  text-align: center;
+  transform: translate(0, -150px);
+}
+
+#mensuration_page_technique{
+  width: 1440px;
+  height: 3379px;
+  background-color: var(--primary-light);
+}
+
+#titre_crochet{
+  width: 273px;
+  height: 51px;
+  margin-left: 40px;
+  transform: translate(0, -50px);
+  border: 2px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gold);
+  color: var(--secondary-color);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.flex_image_fleche{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#flex_titre_h2{
+  display: flex;
+  flex-direction: row;
+}
+
+.titre_technique{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* fin page technique_realisation */
