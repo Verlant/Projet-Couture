@@ -135,7 +135,7 @@ a {
   text-decoration: none;
 }
 
-/* reset CSS */
+/* fin reset CSS */
 
 :root {
   --primary-color: #bc8e7d;
@@ -158,11 +158,17 @@ body {
   background-color: var(--white);
 }
 
+main {
+  width: 1440px;
+  height: calc(2407px - 483px);
+  background-color: var(--primary-light);
+}
+
+/* header */
 header {
   width: 1440px;
-  height: 200px;
+  height: 120px;
   background-color: var(--primary-color);
-  /* position: fixed; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,17 +176,18 @@ header {
 
 #h_navbar {
   width: 1300px;
-  height: 150px;
+  height: calc(150px / 2);
   background-color: var(--secondary-color);
-  border-radius: 20px;
+  border-radius: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* position: fixed; */
 }
 
 #logo {
-  width: 125px;
-  height: 125px;
+  width: calc(125px / 2);
+  height: calc(125px / 2);
   border-radius: 50%;
   background-color: var(--gold);
   display: flex;
@@ -189,8 +196,8 @@ header {
 }
 
 .logo_couture {
-  width: 87.5px;
-  height: 75px;
+  width: calc(87.5px / 2);
+  height: calc(75px / 2);
 }
 
 a:hover {
@@ -202,7 +209,7 @@ a:hover {
   height: auto;
   display: flex;
   justify-content: space-between;
-  font-size: 2.2em;
+  font-size: 1.6em;
   font-family: Arial, Helvetica, sans-serif;
   /* à modifer plus tard par "inter" */
   font-weight: bold;
@@ -210,43 +217,53 @@ a:hover {
   color: var(--white);
 }
 
-#pages>a:hover {
+#pages > a:hover {
   color: var(--gold);
 }
 
 #bar_recherche {
-  width: 236px;
-  height: 57px;
+  width: calc(236px / 1.5);
+  height: calc(57px / 1.5);
   border: 5px solid var(--secondary-light);
   border-radius: 100px;
   background-color: var(--gold);
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 1.5em;
 }
 
 #form_recherche {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 225px;
+  width: calc(225px / 1.5);
+}
+
+#form_recherche > p {
+  height: 20px;
+  margin-left: 5px;
 }
 
 #recherche {
-  width: 135px;
-  height: 25px;
+  width: calc(135px / 1.5);
+  height: 20px;
   background-color: var(--white);
   border-radius: 100px;
   border: 0px solid var(--gold);
   color: var(--secondary-dark);
-  font-size: 0.7em;
   padding-left: 10px;
 }
 
+#loupe {
+  width: 20px;
+  height: 20px;
+}
+/* fin header */
 
+/* footer */
 footer {
   width: 1440px;
-  height: 283px;
+  height: calc(283px / 2);
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
@@ -254,18 +271,20 @@ footer {
 }
 
 #footer_nav {
-  width: 1290px;
-  height: 227px;
+  width: 1100px;
+  height: calc(227px / 2);
   background-color: var(--secondary-color);
-  border-radius: 20px;
+  border-radius: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 #reseaux_sociaux {
-  width: 250px;
-  height: 120px;
+  width: calc(250px / 2);
+  height: calc(120px / 2);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -273,41 +292,38 @@ footer {
   border-radius: 10px;
 }
 
+.footer-img {
+  width: 40px;
+  height: 40px;
+}
+
 .footer_circle {
-  width: 160px;
-  height: 160px;
+  width: calc(160px / 2);
+  height: calc(160px / 2);
   border-radius: 50%;
   background-color: var(--white);
   color: var(--secondary-dark);
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   flex-direction: column;
-  font-size: 2em;
 }
 
 #legislation {
-  width: 335px;
-  height: 120px;
+  width: calc(335px / 2);
+  height: calc(120px / 2);
   background-color: var(--white);
   border-radius: 25px;
   color: var(--secondary-dark);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
   text-align: center;
 }
-
-main {
-  width: 1440px;
-  height: calc(2407px - 483px);
-  background-color: var(--primary-light);
-}
+/* fin footer */
 
 /* Fin général */
-
 
 /* Début index*/
 #bloc_desc {
@@ -419,7 +435,7 @@ main {
   gap: 50px;
 }
 
-#der_realisation>p {
+#der_realisation > p {
   justify-self: center;
   align-self: center;
 }
@@ -445,7 +461,6 @@ main {
   margin-bottom: 180px;
 }
 
-
 #bien_cousue {
   width: 1240px;
   height: 400px;
@@ -456,86 +471,83 @@ main {
 
 /* page réalisation */
 
-
 #image_page_realisation {
   width: 1440px;
   height: 776px;
 }
 
-#nav_controle_2{
+#nav_controle_2 {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#nav_bar_deux{
+#nav_bar_deux {
   width: 1285px;
   height: 193px;
   background-color: var(--primary-color);
   margin-top: 40px;
 }
 
-.li_component{
+.li_component {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
-#list_p_lien{
+#list_p_lien {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   transform: translate(0, 40px);
 }
 
-#bloc_post_realisation{
+#bloc_post_realisation {
   width: 1440px;
   height: calc(2407px - 483px);
-
-  
 }
 
-#component_realisation{
+#component_realisation {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  gap: 100px
+  gap: 100px;
 }
 
-.li_image_realisation{
+.li_image_realisation {
   display: flex;
   flex-direction: column;
   font-size: 1.7em;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
   text-align: center;
   border-radius: 20px;
 }
 
-.image_realisation{
+.image_realisation {
   border: 3px solid var(--secondary-dark);
   border-radius: 20px;
   height: 250px;
   width: 350px;
 }
 
-#voir_plus{
+#voir_plus {
   width: 274px;
   height: 74px;
   border-radius: 100px;
   background-color: var(--gold);
   font-size: 1.7em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   text-align: center;
 }
-
 
 /* Fin page réalisation */
