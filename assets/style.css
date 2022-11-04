@@ -677,3 +677,55 @@ main {
 }
 
 /* Fin Nos coups de coeur */
+
+/* Technique dossier Réalisation */
+
+#bloc_image_realisation_technique{
+  text-align: center;
+  transform: translate(0, -150px);
+}
+
+#mensuration_page_technique{
+  width: 1440px;
+  height: 3379px;
+  background-color: var(--primary-light);
+}
+
+#titre_crochet{
+  width: 273px;
+  height: 51px;
+  margin-left: 40px;
+  transform: translate(0, -50px);
+  border: 2px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gold);
+  color: var(--secondary-color);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.flex_image_fleche{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#flex_titre_h2{
+  display: flex;
+  flex-direction: row;
+}
+
+.titre_technique{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* fin page technique_realisation */
