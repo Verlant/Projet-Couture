@@ -649,4 +649,31 @@ main {
   font-weight: bold;
 }
 
+#fleche_haut_page{
+  border: 1px solid var(--secondary-dark);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-dark);
+  opacity: 50%;
+  transform: translate(1350px, -100px);
+  position: relative;
+}
+
+
+#img_haut_page{
+  width: 30px;
+  height: 30px;
+  opacity: 40%;
+  transform: rotate(90deg);
+  opacity: 100%;
+}
+
+#transition_haut_page{
+  scroll-behavior: smooth;
+}
+
 /* Fin Nos coups de coeur */
