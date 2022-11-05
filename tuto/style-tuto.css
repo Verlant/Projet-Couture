@@ -1,9 +1,5 @@
 @import url(../assets/style.css);
 
-* {
-  box-sizing: border-box;
-}
-
 main {
   height: 1500px;
 }
