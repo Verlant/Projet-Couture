@@ -160,7 +160,6 @@ body {
 
 main {
   width: 1440px;
-  height: calc(2407px - 483px);
   background-color: var(--primary-light);
 }
 
