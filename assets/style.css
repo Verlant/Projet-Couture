@@ -151,7 +151,6 @@ a {
 /* général */
 body {
   width: 100vw;
-  height: 2407px;
   display: flex;
   flex-direction: column;
   align-items: center;
