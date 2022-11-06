@@ -148,6 +148,10 @@ a {
   --white: #ece2e2;
 }
 
+@import url("https://fonts.cdnfonts.com/css/courgette");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.cdnfonts.com/css/inter");
+
 /* général */
 body {
   width: 100vw;
@@ -160,6 +164,19 @@ body {
 main {
   width: 1440px;
   background-color: var(--primary-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courgette", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
 }
 
 /* header */
@@ -276,7 +293,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
@@ -296,8 +313,8 @@ footer {
 }
 
 .footer_circle {
-  width: calc(160px / 2);
-  height: calc(160px / 2);
+  width: calc(180px / 2);
+  height: calc(180px / 2);
   border-radius: 50%;
   background-color: var(--white);
   color: var(--secondary-dark);
@@ -458,8 +475,6 @@ footer {
 #fleche_droite {
   margin-bottom: 180px;
 }
-
-
 
 /* Fin index*/
 
