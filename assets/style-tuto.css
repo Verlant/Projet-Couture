@@ -1,8 +1,4 @@
-@import url(../assets/style.css);
-
-main {
-  height: 1500px;
-}
+@import url(style.css);
 
 .flex-column {
   display: flex;
@@ -28,6 +24,7 @@ main {
   height: 700px;
   background-color: var(--primary-color);
   border-radius: 30px;
+  margin: 50px 0px;
 }
 
 .article-tuto {
