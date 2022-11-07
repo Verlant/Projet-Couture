@@ -21,7 +21,7 @@
 
 .section-tuto {
   width: 1000px;
-  height: 700px;
+  height: 750px;
   background-color: var(--primary-color);
   border-radius: 30px;
   margin: 50px 0px;
@@ -51,6 +51,7 @@
 .aside-tuto {
   width: 45%;
   height: 90%;
+  gap: 30px;
 }
 
 .container-tuto {

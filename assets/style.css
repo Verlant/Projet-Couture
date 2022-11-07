@@ -352,13 +352,13 @@ footer {
 }
 
 .text_white {
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: var(--white);
   margin: 0px 25px;
 }
 
 .text_gold {
-  font-size: 2.2em;
+  font-size: 2.5em;
   color: var(--gold);
 }
 
@@ -466,7 +466,8 @@ footer {
   background-color: var(--secondary-light);
   border-radius: 25px;
   margin-left: 50px;
-  font-size: 1.2em;
+  padding-left: 25px;
+  font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
