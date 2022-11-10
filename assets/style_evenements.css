@@ -342,21 +342,25 @@
   grid-template-columns: 645px 530px;
   grid-template-rows: 300px 300px;
   gap: 110px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   margin-left: 75px;
   grid-template-areas:
     "a b"
     "a c";
 }
-.porte_ouverte{
+
+.porte_ouverte {
   grid-area: a;
 }
-.vacances_creation{
+
+.vacances_creation {
   grid-area: b;
 }
+
 .fete_recup {
   grid-area: c;
 }
+
 .img_vacancesrecup {
   width: 530px;
   height: 296px;
@@ -365,4 +369,18 @@
 .img_porte_ouverte {
   width: 642px;
   height: 710px;
+}
+
+.legende-porte {
+  color: var(--secondary-dark);
+  font-size: 2.5em;
+  align-items: center;
+  margin-top: 20px;
+}
+.legende_vacances_recup {
+  color: var(--secondary-dark);
+  font-size: 2em;
+  align-items: center;
+  margin-top: 20px;
+
 }
