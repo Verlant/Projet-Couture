@@ -1,5 +1,11 @@
 @import url(style.css);
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Début Page évenements_1 */
 .even_cadre_baniere {
   width: 1208px;
@@ -228,8 +234,8 @@
   height: 380px;
   justify-content: space-evenly;
   align-content: center;
-margin-left: 30px;
-margin-right: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .nom_atelier img {
@@ -239,11 +245,11 @@ margin-right: 30px;
   border-radius: 50px;
 }
 
-.fond_light{
+.fond_light {
   background-color: var(--secondary-light);
 }
 
-.baniere_exep{
+.baniere_exep {
   width: 1340px;
   height: 178px;
   background-color: var(--gold);
@@ -266,28 +272,67 @@ margin-right: 30px;
 }
 
 
-.atelier_exceptionnel{
+.atelier_exceptionnel {
   width: 1340px;
   height: 513px;
   margin-bottom: 50px;
   margin-left: 50px;
-  background-color: var(--secondary-light);
+  background-color: var(--secondary-dark);
   margin-top: 50px;
+  padding: 20px;
   display: grid;
-  grid-template-columns: 420px 840px;
+  grid-template-columns: 210px 210px 840px;
   grid-template-rows: 140px 270px;
-
-  grid-template-areas: 
-  "a1 a2 a3"
-  "a1 a2";
+  grid-template-areas:
+    "a1 a2 a3"
+    "a1 a2 b1";
 
 }
+
 .photo_girl {
   grid-area: a1;
 }
+
 .photo_boy {
   grid-area: a2;
 }
-.titre_atelier_exep{
+
+.titre_atelier_exep {
   grid-area: a3;
+}
+
+.description_atelier {
+  grid-area: b1;
+}
+
+.fond_atelier {
+  grid-area: a3;
+}
+
+.atelier_exceptionnel img {
+  width: 209px;
+  height: 361px;
+  margin-top: 100px;
+}
+
+.fond_atelier {
+  width: 818px;
+  height: 139px;
+  background-color: var(--gold);
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  padding: 60px;
+}
+
+.description_atelier {
+  font-size: 2em;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.fond_light {
+  background-color: var(--secondary-light);
 }
