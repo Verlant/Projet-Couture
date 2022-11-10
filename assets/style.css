@@ -480,6 +480,148 @@ footer {
 
 /* Fin index*/
 
+/* page réalisation */
+
+#main_realisation {
+  width: 1440px;
+  height: 2858px;
+  background-color: var(--primary-light);
+}
+
+#bloc_image_realisation {
+  text-align: center;
+  transform: translate(0, -95px);
+}
+
+#titre_realisation {
+  transform: translate(0, 400px);
+  font-size: 7em;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#image_page_realisation {
+  width: 1440px;
+  height: 500spx;
+  opacity: 0.6;
+  border-radius: 20px;
+  filter: sepia(60%);
+  filter: blur(20%);
+  filter: saturate(50%);
+}
+
+#nav_controle_2 {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_bar_deux {
+  width: 1440px;
+  height: 193px;
+  background-color: var(--primary-color);
+  margin-top: 40px;
+  transform: translate(0, -115px);
+}
+
+.li_component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+#list_p_lien {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: translate(0, 20px);
+}
+
+.gap_li {
+  font-size: 1.8em;
+}
+
+.size_image {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+#dimension_bloc_post {
+  width: 1440px;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloc_post_recent {
+  border: 2px solid var(--secondary-dark);
+  width: 500px;
+  height: 70px;
+  background-color: var(--gold);
+  border-radius: 100px;
+  transform: translate(0, -40px);
+}
+#p_post_recent {
+  font-size: 2.5em;
+  width: 500px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#component_realisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 100px;
+}
+
+.li_image_realisation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  text-align: center;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.image_realisation {
+  border: 3px solid var(--secondary-dark);
+  border-radius: 20px;
+  height: 300px;
+  width: 370px;
+}
+
+#voir_plus {
+  width: 230px;
+  height: 70px;
+  border-radius: 100px;
+  background-color: var(--gold);
+  font-size: 1.7em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(1150px, -80px);
+}
+
+/* Fin page réalisation */
 .even_cadre_baniere {
   width: 1208px;
   height: 742px;
