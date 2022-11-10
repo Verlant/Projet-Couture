@@ -212,7 +212,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5em;
+  font-size: 4em;
   color: var(--gold);
 }
 
@@ -335,4 +335,34 @@
 
 .fond_light {
   background-color: var(--secondary-light);
+}
+
+.baniere {
+  display: grid;
+  grid-template-columns: 645px 530px;
+  grid-template-rows: 300px 300px;
+  gap: 110px;
+  margin-bottom: 50px;
+  margin-left: 75px;
+  grid-template-areas:
+    "a b"
+    "a c";
+}
+.porte_ouverte{
+  grid-area: a;
+}
+.vacances_creation{
+  grid-area: b;
+}
+.fete_recup {
+  grid-area: c;
+}
+.img_vacancesrecup {
+  width: 530px;
+  height: 296px;
+}
+
+.img_porte_ouverte {
+  width: 642px;
+  height: 710px;
 }
