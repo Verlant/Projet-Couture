@@ -197,7 +197,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* position: fixed; */
 }
 
 #logo {
@@ -225,8 +224,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   font-size: 1.6em;
-  font-family: Arial, Helvetica, sans-serif;
-  /* à modifer plus tard par "inter" */
   font-weight: bold;
   gap: 20px;
   color: var(--white);
@@ -257,6 +254,7 @@ a:hover {
 #form_recherche > p {
   height: 20px;
   margin-left: 5px;
+  margin-top: 5px;
 }
 
 #recherche {
@@ -293,8 +291,12 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+#footer_nav p {
   font-size: 0.9em;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 #reseaux_sociaux {
