@@ -1,0 +1,197 @@
+@import url(style.css);
+
+/* Début Page évenements_1 */
+.even_cadre_baniere {
+    width: 1208px;
+    height: 742px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 116px;
+  }
+  
+  .even_baniere img {
+    width: 1113px;
+    height: 598px;
+    border-radius: 50px;
+  }
+  
+  .cadre_planning {
+    width: 1340px;
+    height: 680px;
+    background-color: var(--primary-color);
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+    color: var(--secondary-dark);
+    font-size: 3em;
+  }
+  
+  .even_planning img {
+    width: 1200px;
+    height: 550px;
+    border-radius: 25px;
+  }
+  
+  /* .fond_exceptionnel {
+    width: 1340px;
+    height: 746px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .forme_blue {
+    width: 1340px;
+    height: 526px;
+    background-color: var(--secondary-light);
+    margin-top: 70px;
+  }
+  
+  .forme_gold {
+    width: 1340px;
+    height: 746px;
+    background-color: var(--gold);
+  } */
+  
+  .fond_exceptionnel {
+    width: 1340px;
+    height: 746px;
+    background-color: var(--gold);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .conatenaire {
+    display: grid;
+    grid-template-columns: 330px 186px 186px 150px 213px 236px;
+    grid-template-rows: 100px 100px 80px 80px 140px 50px 80px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    grid-template-areas:
+      "cadre_nos costum_girl costum_boy . image_theme papa_noel"
+      "cadre_nos costum_girl costum_boy . image_theme papa_noel"
+      "cadre_nos costum_girl costum_boy . image_theme papa_noel"
+      "cadre_nos atelier_costume atelier_costume . atelier_creation atelier_creation"
+      ". calendrier_halloween calendrier_halloween . calendrier_noel calendrier_noel"
+      ". cliquer_left cliquer_left . cliquer_right cliquer_right"
+      ". note_horraires note_horraires note_horraires note_horraires note_horraires";
+  }
+  
+  .cadre_nos {
+    grid-area: cadre_nos;
+    width: 260px;
+    height: 230px;
+    border-radius: 20px;
+    background-color: var(--secondary-dark);
+    color: var(--gold);
+    font-size: 2.5em;
+    margin-top: 50px;
+    margin-left: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .costum_boy img,
+  .costum_girl img {
+    width: 186px;
+    height: 270px;
+  }
+  
+  .papa_noel img {
+    width: 159px;
+    height: 270px;
+  }
+  .image_theme img {
+    width: 213px;
+    height: 270px;
+  }
+  .calendrier_halloween img {
+    width: 372px;
+    height: 127px;
+  }
+  .calendrier_noel img {
+    width: 372px;
+    height: 127px;
+  }
+  
+  .costum_boy {
+    grid-area: costum_boy;
+  }
+  
+  .image_theme {
+    grid-area: image_theme;
+  }
+  
+  .papa_noel {
+    grid-area: papa_noel;
+  }
+  
+  .atelier_costume {
+    grid-area: atelier_costume;
+    color: var(--secondary-dark);
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .atelier_creation {
+    grid-area: atelier_creation;
+    color: var(--secondary-dark);
+    font-size: 1.8em;
+    margin-right: 110px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .calendrier_halloween {
+    grid-area: calendrier_halloween;
+  }
+  
+  .calendrier_noel {
+    grid-area: calendrier_noel;
+  }
+  
+  .cliquer_left {
+    grid-area: cliquer_left;
+    color: var(--secondary-dark);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cliquer_right {
+    grid-area: cliquer_right;
+    color: var(--secondary-dark);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .note_horraires {
+    grid-area: note_horraires;
+    width: 900px;
+    height: 61px;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--secondary-dark);
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  
