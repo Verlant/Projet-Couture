@@ -1,5 +1,7 @@
 @import url(style.css);
 
+/* start Desktop Version */
+
 /* start general */
 .flex-column {
   display: flex;
@@ -18,6 +20,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .text-en_tete {
   color: var(--secondary-color);
@@ -159,4 +162,83 @@ h2 {
   height: 200px;
   background-color: var(--secondary-color);
 }
-/* end page un tuto */ ;
+/* end page un tuto */
+
+/* end Desktop Version */
+
+/* start Mobile Version */
+
+/* start page tuto */
+
+@media screen and (max-width: 390px) {
+  /* start general */
+  main {
+    width: 390px;
+    height: 5000px;
+  }
+  .text-en_tete {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  /* end general */
+  .section-tuto {
+    width: 290px;
+    height: 2000px;
+  }
+
+  .article-tuto {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-machine-tuto_link {
+    width: 80%;
+    height: 60%;
+  }
+
+  .img-machine-tuto {
+    width: 100%;
+    height: 100%;
+  }
+
+  .p-tuto {
+    font-size: 1.5rem;
+  }
+
+  .aside-tuto {
+    width: 90%;
+    height: 25%;
+    /* gap: 30px; */
+  }
+
+  .container-tuto {
+    width: 100%;
+    height: 10%;
+    /* border: 3px solid var(--secondary-color); */
+  }
+
+  .img-container-tuto {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .logo-tuto {
+    width: calc(125px / 2);
+    height: calc(100px / 2);
+  }
+
+  .text-container-tuto {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* end page tuto */
+
+/* end Mobile Version */
