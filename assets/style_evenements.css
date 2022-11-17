@@ -376,39 +376,81 @@
 
 .container_porte_ouverte {
   width: 1300px;
-  height: 595px;
+  height: 600px;
   background-color: var(--primary-color);
   margin-left: 70px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-direction: column;
-
-
 }
-
 .container_porte_ouverte h1 {
   font-size: 3em;
-  color: var(--gold);
+  color: var(--secondary-dark);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 
 }
-.images_porte_ouverte {
-
-  font-size: 3em;
-  color: var(--gold);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 350px 100px;
-  gap: 25px;
+.images_porte_ouverte h2{
+  font-size: 1em;
+  color: var(--secondary-dark);
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.images_porte_ouverte {
+
+  font-size: 2em;
+  color: var(--secondary-dark);
+  display: grid;
+  grid-template-columns: 90px 310px 310px 310px 90px;
+  grid-template-rows: 310px 60px 200pxpx;
+  gap: 40px;
+  margin-left: 20px;
+  grid-template-areas:
+    "arrow_left photo1 photo2 photo3 arrow_right"
+    ". photo1 photo2 photo3 ."
+    ". description1 description2 description3 .";
+}
+
+.arrow_left {
+  grid-area: arrow_left;
+  margin-top: 124px;
+}
+
+.arrow_right {
+  grid-area: arrow_right;
+  margin-top: 124px;
+
+}
+
+.photo1 {
+  grid-area: photo1;
+}
+
+.photo2 {
+  grid-area: photo2;
+}
+
+.photo3 {
+  grid-area: photo3;
+}
+
 .description1 {
-  gri
+  grid-area: description1;
+}
+
+.description2 {
+  grid-area: description2;
+}
+
+.description3 {
+  grid-area: description3;
 }
 
 .images_porte_ouverte .arrow {
@@ -416,7 +458,9 @@
   height: 59px;
 }
 
-.images_porte_ouverte .photo {
+.images_porte_ouverte>.photo1,
+.photo2,
+.photo3 {
   width: 307px;
   height: 330px;
   background-color: var(--white);
