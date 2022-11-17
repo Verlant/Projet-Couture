@@ -547,24 +547,27 @@
 
   .cadre_nos {
     grid-area: cadre_nos;
-    width: 346px;
-    height: 76px;
+    width: 300px;
+    height: 1px;
     border-radius: 20px;
     background-color: var(--secondary-dark);
     color: var(--gold);
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 500px;
   }
 
   .conatenaire {
     display: grid;
     grid-template-columns: 90px 90px 90px 90px;
     grid-template-rows: 100px 100px 20px 100px 100px;
-    margin-top: 24px;
+    margin-top: 200px;
     margin-bottom: 24px;
     grid-template-areas:
       "atelier_costume atelier_costume costum_girl costum_boy"
@@ -574,8 +577,6 @@
       "image_theme papa_noel atelier_creation calendrier_noel";
 
   }
-
-
 
   .costum_boy img,
   .costum_girl img,
@@ -645,7 +646,6 @@
 
   .note_horraires {
     grid-area: note_horraires;
-    position: absolute;
     width: 346px;
     height: 61px;
     border-radius: 10px;
