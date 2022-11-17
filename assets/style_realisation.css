@@ -25,7 +25,7 @@
   
   #image_page_realisation {
     width: 1440px;
-    height: 600spx;
+    height: 600px;
     opacity: 0.6;
     border-radius: 20px;
     filter: sepia(60%);
@@ -69,6 +69,10 @@
     font-size: 1.8em;
   }
   
+  .gap_li_cdc{
+    font-size: 1.6em;
+  }
+
   .size_image {
     width: 130px;
     height: 130px;
@@ -154,6 +158,7 @@
     transform: rotate(90deg);
     opacity: 100%;
   }
+
   
   /* Fin page réalisation */
 
@@ -208,7 +213,7 @@
     justify-content: center;
     background-color: var(--secondary-dark);
     opacity: 50%;
-    transform: translate(1350px, -100px);
+    transform: translate(1350px, 64px);
     position: relative;
   }
   
@@ -303,7 +308,7 @@
 
   #main_forum{
     width: 1440px;
-    height: 4319px;
+    height: 4160px;
   }
 
   .flex_component_forum{
@@ -530,4 +535,107 @@
 }
 
   /* Fin page Forum */
+
+
+  @media screen and (max-width: 390px ) {
+
+    #main_realisation{
+      width: 390px;
+      height: auto;
+    }
+    #component_realisation{
+      flex-direction: column;
+    }
+    #voir_plus{
+      transform : translate(140px, 45px);
+    }
+    #fleche_haut_page{
+      transform: translate(10px, -25px);
+    }
+
+    #nav_bar_deux{
+      transform: none;
+      width: 390px;
+      height: 120px;
+    }
+
+    #nav_controle_2{
+      margin-top: 10px;
+      margin-bottom: 80px;
+    }
+
+    .gap_li{
+      font-size: 1em;
+    }
+
+    .gap_li_cdc{
+      font-size: 0.7em;
+    }
+    .image_realisation{
+      width: 334px;
+      height: 190px;
+    }
+
+    .li_component{
+      width: none;
+      height: 100px;
+    }
+
+    .size_image{
+      width: 75px;
+      height: 75px;
+    }
+
+    #titre_realisation{
+      font-size: 2.5em;
+    }
+
+    #image_page_realisation{
+      height: 350px;
+      width: 400px;
+    }
+
+    #dimension_bloc_post{
+      display: none;
+    }
+
+    .li_image_realisation{
+      font-size: 1.5em;
+      align-items: start;
+      padding-left: 10px;
+    }
+
+    /* Page Nos coups de coeur mobile */
+
+    #section_coup_dcoeur{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 450px;
+      transform: translate(135px, 0px);
+    }
+
+    .texte_coeur{
+      font-size: 0.75em;
+      width: 350px;
+      transform: translate(135px, 0);
+      text-align: left;
+    }
+    #main_nos_favoris{
+      height: auto;
+      width: 390px;
+    }
+
+    .image_coeur{
+      width: 320px;
+      height: 220px;
+    }
+
+    .titre_coeur{
+      font-size: 1.3em;
+    }
+  }
+
+
   
