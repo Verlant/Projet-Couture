@@ -146,6 +146,14 @@
     justify-content: center;
     transform: translate(1150px, 60px);
   }
+
+  #img_haut_page_real{
+    width: 30px;
+    height: 30px;
+    opacity: 40%;
+    transform: rotate(90deg);
+    opacity: 100%;
+  }
   
   /* Fin page réalisation */
 
