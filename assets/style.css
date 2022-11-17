@@ -148,10 +148,13 @@ a {
   --white: #ece2e2;
 }
 
+@import url("https://fonts.cdnfonts.com/css/courgette");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.cdnfonts.com/css/inter");
+
 /* général */
 body {
   width: 100vw;
-  height: 2407px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,8 +163,20 @@ body {
 
 main {
   width: 1440px;
-  height: calc(2407px - 483px);
   background-color: var(--primary-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courgette", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
 }
 
 /* header */
@@ -217,8 +232,9 @@ a:hover {
   color: var(--white);
 }
 
-#pages > a:hover {
+#pages > a:hover{
   color: var(--gold);
+  
 }
 
 #bar_recherche {
@@ -278,7 +294,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
@@ -298,8 +314,8 @@ footer {
 }
 
 .footer_circle {
-  width: calc(160px / 2);
-  height: calc(160px / 2);
+  width: calc(180px / 2);
+  height: calc(180px / 2);
   border-radius: 50%;
   background-color: var(--white);
   color: var(--secondary-dark);
@@ -337,13 +353,13 @@ footer {
 }
 
 .text_white {
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: var(--white);
   margin: 0px 25px;
 }
 
 .text_gold {
-  font-size: 2.2em;
+  font-size: 2.5em;
   color: var(--gold);
 }
 
@@ -451,7 +467,8 @@ footer {
   background-color: var(--secondary-light);
   border-radius: 25px;
   margin-left: 50px;
-  font-size: 1.2em;
+  padding-left: 25px;
+  font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,12 +476,6 @@ footer {
 
 #fleche_droite {
   margin-bottom: 180px;
-}
-
-#bien_cousue {
-  width: 1240px;
-  height: 400px;
-  background-color: var(--primary-color);
 }
 
 /* Fin index*/
@@ -804,124 +815,3 @@ footer {
   align-items: center;
   align-self: center;
 }
-
-/* page réalisation */
-
-/* Nos coups de coeur */
-
-#main_nos_favoris {
-  width: 1440px;
-  height: 3000px;
-  background-color: var(--primary-light);
-}
-
-#section_coup_dcoeur {
-  transform: translate(0, -70px);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.flex_realisation {
-  width: 600px;
-  height: 500px;
-  text-align: center;
-  font-size: 1.2em;
-  transform: translate(60px, 0);
-  margin-bottom: 200px;
-}
-
-.titre_coeur {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.image_coeur {
-  border: 3px solid var(--secondary-dark);
-  width: 518px;
-  height: 367px;
-}
-
-.texte_coeur {
-  margin-top: 35px;
-  font-weight: bold;
-}
-
-#fleche_haut_page {
-  border: 1px solid var(--secondary-dark);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secondary-dark);
-  opacity: 50%;
-  transform: translate(1350px, -100px);
-  position: relative;
-}
-
-#img_haut_page {
-  width: 30px;
-  height: 30px;
-  opacity: 40%;
-  transform: rotate(90deg);
-  opacity: 100%;
-}
-
-#transition_haut_page {
-  scroll-behavior: smooth;
-}
-
-/* Fin Nos coups de coeur */
-
-/* Technique dossier Réalisation */
-
-#bloc_image_realisation_technique {
-  text-align: center;
-  transform: translate(0, -150px);
-}
-
-#mensuration_page_technique {
-  width: 1440px;
-  height: 3379px;
-  background-color: var(--primary-light);
-}
-
-#titre_crochet {
-  width: 273px;
-  height: 51px;
-  margin-left: 40px;
-  transform: translate(0, -50px);
-  border: 2px solid black;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--gold);
-  color: var(--secondary-color);
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.flex_image_fleche {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#flex_titre_h2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.titre_technique {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* fin page technique_realisation */
