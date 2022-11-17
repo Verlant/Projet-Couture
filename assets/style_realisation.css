@@ -166,7 +166,7 @@
 
 #main_nos_favoris {
     width: 1440px;
-    height: 2500px;
+    height: 2375px;
     background-color: var(--primary-light);
   }
   
@@ -213,7 +213,7 @@
     justify-content: center;
     background-color: var(--secondary-dark);
     opacity: 50%;
-    transform: translate(1350px, 64px);
+    transform: translate(1338px, 167px);
     position: relative;
   }
   
@@ -225,9 +225,6 @@
     opacity: 100%;
   }
   
-  #transition_haut_page {
-    scroll-behavior: smooth;
-  }
 
   /* Fin page Nos coups de coeur */
 
@@ -541,7 +538,7 @@
 
     #main_realisation{
       width: 390px;
-      height: auto;
+      height: 3675px;
     }
     #component_realisation{
       flex-direction: column;
@@ -550,7 +547,7 @@
       transform : translate(140px, 45px);
     }
     #fleche_haut_page{
-      transform: translate(10px, -25px);
+      display: none;
     }
 
     #nav_bar_deux{
@@ -605,6 +602,10 @@
       padding-left: 10px;
     }
 
+    #voir_plus{
+      display: none;
+    }
+
     /* Page Nos coups de coeur mobile */
 
     #section_coup_dcoeur{
@@ -623,8 +624,9 @@
       text-align: left;
     }
     #main_nos_favoris{
-      height: auto;
+      height: 3250px;
       width: 390px;
+
     }
 
     .image_coeur{
@@ -635,6 +637,150 @@
     .titre_coeur{
       font-size: 1.3em;
     }
+
+    /* Page Forum Mobile */
+
+    #main_forum{
+      height: 3700px;
+      width: 390px;
+    }
+
+    #votre_titre{
+      width: 320px;
+      height: 35px;
+    }
+    .flex_items_forum{
+      flex-direction: column;
+      transform: translate(-443px, 10px);
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .flex_component_forum{
+      width: 390px;
+    }
+
+    #bloc_post_forum{
+      width: 390px;
+    }
+
+    #zone_texte_forum{
+      transform: translate(-450px, 40px);
+      width: 300px;
+    }
+
+    .button_submit_forum{
+      width: 150px;
+      height: 40px;
+      transform: translate(200px, -50px);
+
+    }
+
+    #display_none{
+      display: none;
+    }
+
+    .boite_soucis{
+      width: 180px;
+      height: 45px;
+      font-size: 0.53em;
+      margin-left: 10px;
+      margin-top: 50px;
+    }
+
+    #bloc_search_forum{
+      width: 150px;
+      height: 40px;
+      transform: translate(225px, -42.5px);
+    }
+
+    #search_nav{
+      width: 100px;
+      height: 35px;
+      font-size: 0.8em;
+    }
+
+    .bloc_question_reponse{
+      width: 390px;
+      height: 170px;
+    }
+
+    .okay{
+      width: 340px;
+      height: 22px;
+      font-size: 1.5em;
+    }
+
+    .flex_bloc_qr {
+      width: 380px;
+      height: 370px;
+
+    }
+    .bloc_q_user{
+      width: 275px;
+      height: 35px;
+    }
+    .bloc_qr{
+      width: 275px;
+      height: 35px;
+    }
+    .bloc_question_reponse {
+      width: 390px;
+      height: 500px;
+    }
+
+    #repondre{
+      width: 220px;
+      height: 60px;
+      font-size: 1.6em;
+    }
+
+    .formulaire_forum{
+      width: 390px;
+      height: 75px;  
+      transform: none;
+    }
+
+    .bouton_envoyer_q{
+      width: 150px;
+      height: 50px;
+    }
+
+    /* page technique */
+
+    #mensuration_page_technique{
+      height: 2950px;
+    }
+
+    #titre_crochet{
+      transform: translate(535px, -30px);
+    } 
+
+    .flex_image_texte2{
+      display: none;
+    }
+
+    .flex_image_texte{
+      width: 300px;
+    }
+
+    .fleche_gauche_technique{
+      transform: translate(-350px, 55px);
+    }
+
+    .image_technique{
+      width: 300px;
+      height: 225px;
+    }
+
+    .titre_image_real{
+      margin-top: 120px;
+      margin-bottom: 50px;
+    } 
+
+
+
+
   }
 
 
