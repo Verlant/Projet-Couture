@@ -309,7 +309,8 @@
 
 .texte_atelier {
   margin-left: 0px;
-  font-size: 1.6em;
+  font-size: 2em;
+  line-height: 130%;
 }
 
 .nom_atelier img {
@@ -790,372 +791,308 @@
 
 
 
-/* Version _ Mobile _ Fin Page Évènements **********************************************************/
-
-
-/* Version _ Mobile _ Début Page Nos ateliers **********************************************************/
-
-.triangle_nos_ateliers1 {
-  margin-top: 10px;
-  margin-left: 10px;
-  border-left: 185px solid transparent;
-  border-right: 185px solid transparent;
-  border-bottom: 10px solid var(--secondary-light);
-}
-
-.baniere_titre {
-  width: 370px;
-  height: 29px;
-  margin-left: 10px;
-  margin-top: 19px;
-  font-size: 1.8em;
-  color: var(--gold);
-}
-
-
-.triangle_nos_ateliers2 {
-  margin-left: 10px;
-  border-left: 185px solid transparent;
-  border-right: 185px solid transparent;
-  border-top: 10px solid var(--secondary-light);
-
-}
-
-.nom_atelier {
-  width: 370px;
-  height: 170px;
-  background-color: var(--secondary-color);
-  margin-left: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.atelier_flex {
-  position: absolute;
-  right: 120px;
-  display: flex;
-  flex-direction: column;
-  width: 230px;
-  height: 156px;
-  justify-content: space-evenly;
-  align-content: center;
-  margin-left: 5px;
-  margin-right: 10px;
-}
-
-
-.atelier_flex h1 {
-  margin-bottom: 10px;
-  font-size: 1.5em;
-}
-
-
-.texte_atelier {
-  margin-left: 0px;
-  font-size: 0.6em;
-}
-
-.nom_atelier img {
-  position: absolute;
-right: 30px;
-  width: 100px;
-  height: 80px;
-  margin-left: 20px;
-  border-radius: 10px;
-}
-
-.fond_light {
-  background-color: var(--secondary-light);
-}
-
-.triangle_even_exep_gold1 {
-  position: absolute;
-  margin-top: 103px;
-  margin-left: 50px;
-  width: 0;
-  height: 0;
-  border-left: 670px solid transparent;
-  border-right: 670px solid transparent;
-  border-bottom: 48px solid var(--gold);
-}
-
-
-.baniere_exep {
-  width: 1340px;
-  height: 83px;
-  background-color: var(--gold);
-  margin-top: 150px;
-  margin-left: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.5em;
-  color: var(--secondary-dark);
-}
-
-.triangle_even_exep_gold2 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  margin-left: 50px;
-  border-left: 670px solid transparent;
-  border-right: 670px solid transparent;
-  border-top: 50px solid var(--gold);
-
-}
-
-.note_horaires {
-  columns: var(--secondary-dark);
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  font-style: italic;
-  margin-top: 60px;
-
-}
-
-
-.atelier_exceptionnel {
-  width: 1340px;
-  height: 465px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  background-color: var(--secondary-dark);
-  margin-top: 50px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 210px 210px 840px;
-  grid-template-rows: 140px 270px;
-  grid-template-areas:
-    "a1 a2 a3"
-    "a1 a2 b1";
-
-}
-
-.photo_girl {
-  grid-area: a1;
-}
-
-.photo_boy {
-  grid-area: a2;
-}
-
-.titre_atelier_exep {
-  grid-area: a3;
-}
-
-.description_atelier {
-  grid-area: b1;
-}
-
-.fond_atelier {
-  grid-area: a3;
-}
-
-.atelier_exceptionnel img {
-  width: 209px;
-  height: 361px;
-  margin-top: 100px;
-}
-
-.fond_atelier {
-  width: 868px;
-  height: 160px;
-  background-color: var(--gold);
-  margin-left: 60px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 2.6em;
-  line-height: 130%;
-  box-sizing: border-box;
-  padding: 30px;
-}
-
-.titre_atelier_exep {
-  width: 600px;
-  height: 140px;
-}
-
-.titre_atelier_exep2 {
-  width: 530px;
-
-}
-
-.description {
-  width: 950px;
-}
-
-.description_atelier {
-  font-size: 2em;
-  margin-top: 50px;
-  margin-left: 60px;
-
-}
-
-.fond_light {
-  background-color: var(--secondary-light);
-}
-
-
-
-
-
-/* Version _ Mobile _ Fin Page Nos ateliers **********************************************************/
-
-
-/* Version _ Mobile _ Début Page evenements et moments marquants **********************************************************/
-
-.baniere {
-  display: grid;
-  grid-template-columns: 645px 530px;
-  grid-template-rows: 300px 300px;
-  gap: 110px;
-  margin-bottom: 150px;
-  margin-left: 75px;
-  grid-template-areas:
-    "a b"
-    "a c";
-}
-
-.porte_ouverte {
-  grid-area: a;
-}
-
-.vacances_creation {
-  grid-area: b;
-}
-
-.fete_recup {
-  grid-area: c;
-
-}
-
-.img_vacancesrecup {
-  width: 530px;
-  height: 296px;
-}
-
-.img_porte_ouverte {
-  width: 642px;
-  height: 710px;
-}
-
-.legende-porte {
-  color: var(--secondary-dark);
-  font-size: 2.5em;
-  align-items: center;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.legende_vacances_recup {
-  color: var(--secondary-dark);
-  font-size: 2em;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.container_porte_ouverte {
-  width: 1300px;
-  height: 600px;
-  background-color: var(--primary-color);
-  margin-left: 70px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-}
-
-.container_porte_ouverte h1 {
-  font-size: 3em;
-  color: var(--secondary-dark);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-
-}
-
-.images_porte_ouverte h2 {
-  font-size: 1em;
-  color: var(--secondary-dark);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.images_porte_ouverte {
-
-  font-size: 2em;
-  color: var(--secondary-dark);
-  display: grid;
-  grid-template-columns: 90px 310px 310px 310px 90px;
-  grid-template-rows: 310px 60px 200pxpx;
-  gap: 40px;
-  margin-left: 20px;
-  grid-template-areas:
-    "arrow_left photo1 photo2 photo3 arrow_right"
-    ". photo1 photo2 photo3 ."
-    ". description1 description2 description3 .";
-}
-
-.arrow_left {
-  grid-area: arrow_left;
-  margin-top: 124px;
-}
-
-.arrow_right {
-  grid-area: arrow_right;
-  margin-top: 124px;
-
-}
-
-.photo1 {
-  grid-area: photo1;
-}
-
-.photo2 {
-  grid-area: photo2;
-}
-
-.photo3 {
-  grid-area: photo3;
-}
-
-.description1 {
-  grid-area: description1;
-}
-
-.description2 {
-  grid-area: description2;
-}
-
-.description3 {
-  grid-area: description3;
-}
-
-.images_porte_ouverte .arrow {
-  width: 61px;
-  height: 59px;
-}
-
-.images_porte_ouverte>.photo1,
-.photo2,
-.photo3 {
-  width: 307px;
-  height: 330px;
-  background-color: var(--white);
-}
+  /* Version _ Mobile _ Fin Page Évènements **********************************************************/
+
+
+  /* Version _ Mobile _ Début Page Nos ateliers **********************************************************/
+
+  .triangle_nos_ateliers1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-left: 185px solid transparent;
+    border-right: 185px solid transparent;
+    border-bottom: 10px solid var(--secondary-light);
+  }
+
+  .baniere_titre {
+    width: 370px;
+    height: 29px;
+    margin-left: 10px;
+    margin-top: 19px;
+    font-size: 1.8em;
+  }
+
+
+  .triangle_nos_ateliers2 {
+    margin-left: 10px;
+    border-left: 185px solid transparent;
+    border-right: 185px solid transparent;
+    border-top: 10px solid var(--secondary-light);
+
+  }
+
+  .nom_atelier {
+    width: 370px;
+    height: 170px;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+
+  .atelier_flex {
+    position: absolute;
+    right: 120px;
+    width: 230px;
+    height: 156px;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+  .atelier_flex h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+
+  .container_texte_atelier {
+    width: 250px;
+    height: 96px;
+    margin-left: 0px;
+    font-size: 0.35em;
+  }
+
+  .nom_atelier img {
+    position: absolute;
+    right: 30px;
+    width: 100px;
+    height: 80px;
+    right: 30px;
+    border-radius: 10px;
+  }
+
+
+  .triangle_even_exep_gold1 {
+    margin-top: 31px;
+    margin-left: 10px;
+    border-left: 185px solid transparent;
+    border-right: 185px solid transparent;
+    border-bottom: 10px solid var(--gold);
+  }
+
+
+  .baniere_exep {
+    width: 370px;
+    height: 16px;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 0.8em;
+  }
+
+  .triangle_even_exep_gold2 {
+    margin-left: 10px;
+    border-left: 185px solid transparent;
+    border-right: 185px solid transparent;
+    border-top: 10px solid var(--gold);
+
+  }
+
+  .note_horaires {
+    font-size: 0.5em;
+    margin-top: 15px;
+
+  }
+
+
+  .atelier_exceptionnel {
+    width: 370px;
+    height: 178px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 59px 59px 254px;
+    grid-template-rows: 46px 108px;
+
+  }
+
+  .atelier_exceptionnel img {
+    width: 58px;
+    height: 125px;
+    margin-top: 30px;
+  }
+
+  .fond_atelier {
+    width: 225px;
+    height: 46px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-size: 0.9em;
+    padding: 6px;
+    line-height: 130%;
+    text-align: center;
+
+  }
+
+  .titre_atelier_exep {
+    margin-right: 0px;
+
+  }
+
+  .description {
+    width: 245px;
+  }
+
+  .description_atelier {
+    font-size: 0.6em;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: justify;
+    line-height: 110%;
+  }
+
+  /* Version _ Mobile _ Fin Page Nos ateliers **********************************************************/
+
+
+  /* Version _ Mobile _ Début Page evenements et moments marquants **********************************************************/
+
+  .baniere {
+    display: grid;
+    grid-template-columns: 645px 530px;
+    grid-template-rows: 300px 300px;
+    gap: 110px;
+    margin-bottom: 150px;
+    margin-left: 75px;
+    grid-template-areas:
+      "a b"
+      "a c";
+  }
+
+  .porte_ouverte {
+    grid-area: a;
+  }
+
+  .vacances_creation {
+    grid-area: b;
+  }
+
+  .fete_recup {
+    grid-area: c;
+
+  }
+
+  .img_vacancesrecup {
+    width: 530px;
+    height: 296px;
+  }
+
+  .img_porte_ouverte {
+    width: 642px;
+    height: 710px;
+  }
+
+  .legende-porte {
+    color: var(--secondary-dark);
+    font-size: 2.5em;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .legende_vacances_recup {
+    color: var(--secondary-dark);
+    font-size: 2em;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .container_porte_ouverte {
+    width: 1300px;
+    height: 600px;
+    background-color: var(--primary-color);
+    margin-left: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .container_porte_ouverte h1 {
+    font-size: 3em;
+    color: var(--secondary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+  }
+
+  .images_porte_ouverte h2 {
+    font-size: 1em;
+    color: var(--secondary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images_porte_ouverte {
+
+    font-size: 2em;
+    color: var(--secondary-dark);
+    display: grid;
+    grid-template-columns: 90px 310px 310px 310px 90px;
+    grid-template-rows: 310px 60px 200pxpx;
+    gap: 40px;
+    margin-left: 20px;
+    grid-template-areas:
+      "arrow_left photo1 photo2 photo3 arrow_right"
+      ". photo1 photo2 photo3 ."
+      ". description1 description2 description3 .";
+  }
+
+  .arrow_left {
+    grid-area: arrow_left;
+    margin-top: 124px;
+  }
+
+  .arrow_right {
+    grid-area: arrow_right;
+    margin-top: 124px;
+
+  }
+
+  .photo1 {
+    grid-area: photo1;
+  }
+
+  .photo2 {
+    grid-area: photo2;
+  }
+
+  .photo3 {
+    grid-area: photo3;
+  }
+
+  .description1 {
+    grid-area: description1;
+  }
+
+  .description2 {
+    grid-area: description2;
+  }
+
+  .description3 {
+    grid-area: description3;
+  }
+
+  .images_porte_ouverte .arrow {
+    width: 61px;
+    height: 59px;
+  }
+
+  .images_porte_ouverte>.photo1,
+  .photo2,
+  .photo3 {
+    width: 307px;
+    height: 330px;
+    background-color: var(--white);
+  }
 
 }
 
