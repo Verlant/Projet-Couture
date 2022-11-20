@@ -5,11 +5,12 @@
   padding: 0;
   /* box-sizing: border-box; */
 }
+
 #recherche {
   width: 92px;
   height: 22px;
-
 }
+
 /* ************************************************************************* */
 /* Début Version Desktop ******************************************************/
 /* ************************************************************************* */
@@ -43,8 +44,6 @@
   margin-left: 50px;
   color: var(--secondary-dark);
   font-size: 3em;
-  font-family: "Courgette", sans-serif;
-
 }
 
 .even_planning img {
@@ -89,12 +88,23 @@
   border-radius: 20px;
   background-color: var(--secondary-dark);
   color: var(--gold);
-  font-size: 2.3em;
+  font-size: 2.1em;
   margin-top: 50px;
   display: flex;
-  justify-content: center;
+  text-align: center;
   align-items: center;
-  padding: 20px;
+  line-height: 130%;
+}
+
+#titre_even_exep {
+  width: 230px;
+  height: 173px;
+  align-self: center;
+  margin-left: 15px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+
 }
 
 .costum_boy img,
@@ -136,22 +146,27 @@
 }
 
 .atelier_costume {
+  width: 350px;
+  height: 60px;
+  text-align: center;
   grid-area: atelier_costume;
   color: var(--secondary-dark);
   font-size: 1.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 130%;
 }
 
 .atelier_creation {
+  width: 300px;
+  height: 60px;
+
   grid-area: atelier_creation;
   color: var(--secondary-dark);
   font-size: 1.5em;
-  margin-right: 110px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 40px;
+text-align: center;
+  line-height: 130%;
+
 
 }
 
@@ -214,7 +229,6 @@
   width: 1340px;
   height: 392px;
   background-color: var(--secondary-color);
-  border-radius: 20px;
   margin: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -310,20 +324,36 @@
 }
 
 .fond_atelier {
-  width: 745px;
+  width: 868px;
+  height: 160px;
   background-color: var(--gold);
   margin-left: 60px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 3em;
-  padding: 60px;
-  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2.6em;
+  line-height: 130%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.titre_atelier_exep {
+  width: 600px;
+  height: 140px;
+}
+
+.titre_atelier_exep2 {
+  width: 530px;
+
+}
+
+.description {
+  width: 950px;
 }
 
 .description_atelier {
   font-size: 2em;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 60px;
 
 }
@@ -642,7 +672,7 @@
   }
 
   .cliquer_left {
-  display: none;
+    display: none;
   }
 
   .cliquer_right {
