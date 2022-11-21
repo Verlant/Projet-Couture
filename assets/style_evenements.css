@@ -654,7 +654,6 @@
 /* Début Version mobile ******************************************************/
 /* ************************************************************************* */
 
-/* Version _ Mobile _ Début Page Évènements **********************************************************/
 @media screen and (max-width: 390px) {
   #recherche {
     width: 52px;
@@ -665,6 +664,12 @@
   /* start general */
   main {
     width: 390px;
+  }
+
+  /* Version _ Mobile _ Début Page Évènements **********************************************************/
+
+  .triangle_even_exep1 {
+    display: none;
   }
 
 
@@ -703,7 +708,7 @@
 
   .fond_exceptionnel {
     width: 370px;
-    height: 486px;
+    height: 490px;
     background-color: var(--secondary-light);
     display: flex;
     justify-content: center;
@@ -712,47 +717,83 @@
     margin-left: 10px;
     margin-top: 24px;
     margin-bottom: 24px;
+    padding: 0;
   }
 
   .cadre_nos {
     grid-area: cadre_nos;
-    width: 300px;
-    height: 1px;
-    border-radius: 20px;
-    background-color: var(--secondary-dark);
-    color: var(--gold);
+    width: 350px;
+    height: 26px;
+    border-radius: 0px;
+    padding: 0;
     font-size: 1em;
-    margin-top: 50px;
-    display: flex;
+    margin-top: 0px;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
     position: absolute;
+    left: 14px;
+    bottom: 564px;
+  }
+
+  .cadre_nos_triangle {
+    position: absolute;
+    margin-left: 10px;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-top: 50px solid var(--secondary-dark);
     left: 10px;
-    bottom: 500px;
+    bottom: 514px;
+
+  }
+
+  #titre_even_exep {
+    padding-top: 8px;
+  }
+
+  .note_horraires {
+    grid-area: note_horraires;
+    width: 200px;
+    height: 24px;
+    border-radius: 10px;
+    background-color: var(--secondary-dark);
+    color: var(--white);
+    font-size: 0.52em;
+    text-align: center;
+    position: absolute;
+    margin-left: 81px;
+    bottom: 541px;
   }
 
   .conatenaire {
+
     display: grid;
-    grid-template-columns: 90px 90px 90px 90px;
-    grid-template-rows: 100px 100px 20px 100px 100px;
-    margin-top: 200px;
-    margin-bottom: 24px;
+    grid-template-columns: 89px 89px 89px 89px;
+    grid-template-rows: 100px 100px 100px 100px;
+    margin-top: 85px;
+    margin-bottom: 1px;
     grid-template-areas:
       "atelier_costume atelier_costume costum_girl costum_boy"
       "calendrier_halloween calendrier_halloween costum_girl costum_boy"
-      ". . . ."
       "image_theme papa_noel atelier_creation atelier_creation"
-      "image_theme papa_noel atelier_creation calendrier_noel";
+      "image_theme papa_noel calendrier_noel calendrier_noel";
 
   }
 
   .costum_boy img,
-  .costum_girl img,
-  .papa_noel img,
+  .costum_girl img {
+    width: 89px;
+    height: 190px;
+  }
+
+
+  .papa_noel img {
+    width: 108px;
+    height: 190px;
+  }
+
   .image_theme img {
     width: 89px;
     height: 190px;
+    margin-left: 5px;
   }
 
   .calendrier_halloween img {
@@ -779,30 +820,51 @@
 
   .calendrier_halloween {
     grid-area: calendrier_halloween;
+    margin-left: 25px;
+
   }
 
   .calendrier_noel {
     grid-area: calendrier_noel;
+    margin-left: 37px;
   }
 
   .atelier_costume {
     grid-area: atelier_costume;
-    color: var(--secondary-dark);
-    font-size: 0.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 176px;
+    height: 63px;
+    grid-area: atelier_costume;
+    font-size: 1em;
+    margin-top: 40px;
+    color: var(--gold);
+
   }
 
   .atelier_creation {
     grid-area: atelier_creation;
-    color: var(--secondary-dark);
-    font-size: 0.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 176px;
+    height: 63px;
+    grid-area: atelier_creation;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-top: 50px;
+
 
   }
+
+  .triangle_even_exep2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 409px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 370px solid var(--gold);
+    bottom: 48px;
+    box-shadow: none;
+    margin-left: -10px;
+    rotate: 90deg;
+  }
+
 
   .cliquer_left {
     display: none;
@@ -813,19 +875,7 @@
 
   }
 
-  .note_horraires {
-    grid-area: note_horraires;
-    width: 346px;
-    height: 61px;
-    border-radius: 10px;
-    background-color: var(--white);
-    color: var(--secondary-dark);
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-  }
+
 
 
 
