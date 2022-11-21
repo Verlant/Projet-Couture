@@ -457,6 +457,15 @@
 
 
 /* Début Page Évènements et moments marquant ******************************************************/
+.VectorLeftMarquant_porte,
+.VectorRightMarquant_porte,
+.VectorLeftMarquant_vacances,
+.VectorRightMarquant_vacances,
+.VectorLeftMarquant_fete,
+.VectorRightMarquant_fete {
+  display: none;
+}
+
 .baniere_titre_marquant {
   width: 1340px;
   height: 103px;
@@ -974,11 +983,25 @@
 
   /* Version _ Mobile _ Début Page evenements et moments marquants **********************************************************/
 
+  .VectorLeftMarquant_porte,
+  .VectorRightMarquant_porte,
+  .VectorLeftMarquant_vacances,
+  .VectorRightMarquant_vacances,
+  .VectorLeftMarquant_fete,
+  .VectorRightMarquant_fete {
+    display: block;
+    width: 28px;
+    height: 50px;
+    z-index: 1;
+    margin-bottom: 40px;
+
+  }
+
   .baniere_titre_marquant {
     width: 370px;
     height: 26px;
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 1em;
   }
 
@@ -993,34 +1016,65 @@
   }
 
   .baniere {
-    margin-top: 110px;
-    display: grid;
-    grid-template-columns: 553px;
-    grid-template-rows: 355px 262px 284px;
     margin-left: 10px;
+    margin-right: 18px;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 0px;
+    margin-top: 26px;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 28px 314px 28px;
+    grid-template-rows: 355px 262px 284px;
     grid-template-areas:
-      "a"
-      "b"
-      "c";
+      "a1 a2 a3"
+      "b1 b2 b3"
+      "c1 c2 c3";
+  }
+
+  .VectorLeftMarquant_porte {
+    grid-area: a1;
+
   }
 
   .porte_ouverte {
-    grid-area: a;
+    grid-area: a2;
+  }
+
+  .VectorRightMarquant_porte {
+    grid-area: a3;
+  }
+
+
+  .VectorLeftMarquant_vacances {
+    grid-area: b1;
+
   }
 
   .vacances_creation {
-    grid-area: b;
+    grid-area: b2;
+  }
+
+  .VectorRightMarquant_vacances {
+    grid-area: b3;
+
+  }
+
+
+  .VectorLeftMarquant_fete {
+    grid-area: c1;
+
+
   }
 
   .fete_recup {
-    grid-area: c;
+    grid-area: c2;
 
   }
 
-  .img_vacancesrecup {
-    width: 291px;
-    height: 191px;
-    border-radius: 20px;
+  .VectorRightMarquant_fete {
+    grid-area: c3;
+
 
 
   }
@@ -1029,8 +1083,6 @@
     width: 315px;
     height: 284px;
     border-radius: 20px;
-    margin-left: 28px;
-
 
   }
 
@@ -1038,16 +1090,24 @@
     color: var(--secondary-dark);
     font-size: 1em;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  .img_vacancesrecup {
+    width: 291px;
+    height: 191px;
+    border-radius: 20px;
+    margin-left: 12px;
+
+  }
+
   .legende_vacances_recup {
     color: var(--secondary-dark);
-    font-size: 1.9em;
-    margin-top: 20px;
+    font-size: 1em;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1056,7 +1116,7 @@
 
   .container_porte_ouverte {
     display: none;
-   
+
   }
 
 }
