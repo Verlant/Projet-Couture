@@ -589,7 +589,7 @@
 
     #image_page_realisation{
       height: 350px;
-      width: 400px;
+      width: 390px;
     }
 
     #dimension_bloc_post{
@@ -614,14 +614,22 @@
       justify-content: center;
       align-items: center;
       margin-right: 450px;
-      transform: translate(135px, 0px);
+      /* transform: translate(135px, 0px); */
+    }
+
+    .flex_realisation{
+      transform: translate(200px, 0);
+      width: 390px;
+      margin-bottom: 75px;
+      margin-top: 50px;
     }
 
     .texte_coeur{
       font-size: 0.75em;
       width: 350px;
-      transform: translate(135px, 0);
+      /* transform: translate(135px, 0); */
       text-align: left;
+      padding-left: 30px;
     }
     #main_nos_favoris{
       height: 3250px;
@@ -750,10 +758,11 @@
 
     #mensuration_page_technique{
       height: 2950px;
+      width: 390px;
     }
 
     #titre_crochet{
-      transform: translate(535px, -30px);
+      transform: translate(-5px, -30px);
     } 
 
     .flex_image_texte2{
@@ -765,7 +774,7 @@
     }
 
     .fleche_gauche_technique{
-      transform: translate(-350px, 55px);
+      transform: translate(0px, 55px);
     }
 
     .image_technique{
