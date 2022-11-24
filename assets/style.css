@@ -528,7 +528,7 @@ footer {
 
 /* start Version Mobile */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
   /* start header */
   header {
     width: 390px;
@@ -691,7 +691,7 @@ footer {
   }
 
   #footer_nav p {
-    font-size: 0.4em;
+    font-size: 0.35rem;
   }
 
   #reseaux_sociaux {
@@ -705,13 +705,16 @@ footer {
   }
 
   .footer_circle {
-    width: 42px;
-    height: 42px;
+    width: 45px;
+    height: 45px;
   }
 
   #legislation {
     width: 98px;
     height: 36px;
+  }
+  #legislation > a > p {
+    font-size: 0.45rem;
   }
   /* end footer */
 }
