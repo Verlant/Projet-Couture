@@ -79,13 +79,9 @@
   align-self: center;
 }
 
-
 /* end Version Desktop */
-
 /* *************************************************************************************************************************** */
-
 /* start Version Mobile */
-
 @media screen and (max-width: 391px) {
   main {
     width: 390px;
@@ -95,10 +91,6 @@
     width: 240px;
     height: 478px;
     border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     margin: 50px;
     margin-top: 60px;
   }
@@ -106,61 +98,47 @@
   .flex_ligne {
     width: 240px;
     margin-top: 20px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .flex_column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
   }
 
   .presentation-image {
     width: 153px;
     height: 141px;
-    align-self: center;
     margin-bottom: 25px;
     margin-left: 50px;
     margin-top: 10px;
-
+    border-radius: 50%;
   }
 
   .titre_h1 {
     font-size: 2em;
-    align-self: center;
   }
 
   .text {
     font-size: 0.65em;
     margin-top: 0px;
-
   }
 
   .text-en_tete {
     font-size: 1.5em;
     margin-bottom: 0px;
     color: var(--secondary-dark);
-
   }
-.text-en_tete_presentation{
-  margin-bottom: 20px;
-}
+
+  .text-en_tete_presentation {
+    margin-bottom: 20px;
+  }
 
   #contactez-nous {
     width: 240px;
     height: 312px;
     border-radius: 25px;
     margin: 50px;
-    padding: 0px 30px;
   }
 
   .contenaier {
     width: 240px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 0px;
     margin: 0px;
     margin-left: 20px;
@@ -169,19 +147,16 @@
   .personnel {
     width: 240px;
     height: 400px;
-    border-radius: 30px;
+    border-radius: 25px;
     padding: 30px;
     gap: 30px;
     margin-bottom: 50px;
     margin-left: 30px;
-    display: flex;
-    justify-content: space-between;
   }
 
   .personnel img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    align-self: center;
   }
 }
