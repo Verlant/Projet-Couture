@@ -294,16 +294,17 @@
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .mensuration_sect{
     margin-top: 250px;
   }
-
+/* 
   .li_ncdc{
     width: 160px;
     height: 100px;
-  }
+  } */
   /* fin page technique_realisation */
 
   /* Debut page Forum */
