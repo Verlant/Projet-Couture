@@ -1,3 +1,9 @@
+/* import */
+
+@import url("https://fonts.cdnfonts.com/css/courgette");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.cdnfonts.com/css/inter");
+
 /* reset CSS */
 html,
 body,
@@ -139,7 +145,7 @@ a {
 
 /* *************************************************************************************************************************** */
 
-/* start Variables / Import */
+/* start Variables */
 
 :root {
   --primary-color: #bc8e7d;
@@ -151,10 +157,6 @@ a {
   --gold: #e7c060;
   --white: #ece2e2;
 }
-
-@import url("https://fonts.cdnfonts.com/css/courgette");
-@import url("https://fonts.cdnfonts.com/css/montserrat");
-@import url("https://fonts.cdnfonts.com/css/inter");
 
 /* end Variables / Import */
 
@@ -603,6 +605,10 @@ footer {
     border-radius: 25px;
     position: absolute;
     bottom: -10px;
+  }
+
+  #hidden:hover {
+    cursor: pointer;
   }
 
   #hidden:checked ~ #pages {

@@ -23,23 +23,36 @@
         <div class="invert_border_right"></div>
         <div class="invert_border_left"></div>
         <ul id="pages">
-          <a href="../evenements/evenement.html">
-            <li><p>Évènement</p></li>
-          </a>
-          <a href="../realisation/realisation.html">
-            <li><p>Réalisation</p></li>
-          </a>
-          <a href="tuto.html">
-            <li><p>Tuto</p></li>
-          </a>
-          <a href="../a_propos.html">
-            <li><p>&Agrave; propos</p></li>
-          </a>
+          <li>
+            <a href="../evenements/evenement.html">
+              <p>Évènement</p>
+            </a>
+          </li>
+          <li>
+            <a href="../realisation/realisation.html">
+              <p>Réalisation</p>
+            </a>
+          </li>
+          <li>
+            <a href="tuto.html">
+              <p>Tuto</p>
+            </a>
+          </li>
+          <li>
+            <a href="../a_propos.html">
+              <p>&Agrave; propos</p>
+            </a>
+          </li>
         </ul>
         <div id="bar_recherche">
           <form action="recherche" id="form_recherche">
             <label for="loupe"></label>
-            <input type="image" src="../assets/img/Vector.png" id="loupe" />
+            <input
+              type="image"
+              src="../assets/img/Vector.png"
+              alt="icone de loupe"
+              id="loupe"
+            />
             <p>|</p>
 
             <label for="recherche"></label>
@@ -54,22 +67,19 @@
       </nav>
     </header>
     <main class="flex-column">
-      <section class="section-tuto">
-        <article class="article-tuto flex-column">
-          <a href="un_tuto.html" class="img-machine-tuto_link"
-            ><img
-              src="../assets/img/téléchargement.jpg"
-              alt="image de machine a coudre"
-              class="img-machine-tuto"
-          /></a>
-          <h1>Dernier tuto / plus vue</h1>
-          <p class="p-tuto">Dernier commentaire du tuto</p>
-        </article>
-      </section>
-      <section class="section-tuto flex-row">
+      <div class="section-tuto flex-column">
+        <a href="un_tuto.html" class="img-machine-tuto_link"
+          ><img
+            src="../assets/img/téléchargement.jpg"
+            alt="image de machine a coudre"
+            class="img-machine-tuto"
+        /></a>
+        <h1>Dernier tuto / plus vue</h1>
+        <p class="p-tuto">Dernier commentaire du tuto</p>
+      </div>
+      <div class="section-tuto flex-row">
         <aside class="aside-tuto flex-column">
           <h1>Techniques</h1>
-
           <div class="container-tuto flex-row">
             <div class="img-container-tuto flex-center">
               <img
@@ -84,7 +94,6 @@
               >
             </div>
           </div>
-
           <div class="container-tuto flex-row">
             <div class="img-container-tuto flex-center">
               <img
@@ -159,7 +168,7 @@
             </div>
           </div>
         </aside>
-      </section>
+      </div>
     </main>
     <footer>
       <nav id="footer_nav">
@@ -188,7 +197,11 @@
         <div>
           <a href="../realisation/forum.html" class="footer_circle">
             <p>Forum</p>
-            <img src="../assets/img/forum.png" class="footer-img" />
+            <img
+              src="../assets/img/forum.png"
+              alt="icone forum"
+              class="footer-img"
+            />
           </a>
         </div>
         <div id="legislation">
