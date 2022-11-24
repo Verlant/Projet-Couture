@@ -320,19 +320,8 @@
   background-color: var(--secondary-light);
 }
 
-.triangle_even_exep_gold1 {
-  position: absolute;
-  margin-top: 103px;
-  margin-left: 50px;
-  width: 0;
-  height: 0;
-  border-left: 670px solid transparent;
-  border-right: 670px solid transparent;
-  border-bottom: 48px solid var(--gold);
-}
-
-
 .baniere_exep {
+  position: relative;
   width: 1340px;
   height: 83px;
   background-color: var(--gold);
@@ -343,6 +332,20 @@
   align-items: center;
   font-size: 3.5em;
   color: var(--secondary-dark);
+}
+
+.cadre_triangle{
+  position: relative;
+   }
+.triangle_even_exep_gold1 {
+  position: absolute;
+  margin-top: 103px;
+  margin-left: 50px;
+  width: 0;
+  height: 0;
+  border-left: 670px solid transparent;
+  border-right: 670px solid transparent;
+  border-bottom: 48px solid var(--gold);
 }
 
 .triangle_even_exep_gold2 {
@@ -943,7 +946,20 @@
   }
 
 
+  .baniere_exep {
+    position: relative;
+    width: 370px;
+    height: 16px;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 0.8em;
+  }
+
+  .cadre_triangle{
+    position: relative;
+     }
   .triangle_even_exep_gold1 {
+    position: absolute;
     margin-top: 31px;
     margin-left: 10px;
     border-left: 185px solid transparent;
@@ -952,15 +968,8 @@
   }
 
 
-  .baniere_exep {
-    width: 370px;
-    height: 16px;
-    margin-top: 40px;
-    margin-left: 10px;
-    font-size: 0.8em;
-  }
-
   .triangle_even_exep_gold2 {
+    position: absolute;
     margin-left: 10px;
     border-left: 185px solid transparent;
     border-right: 185px solid transparent;
