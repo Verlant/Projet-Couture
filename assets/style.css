@@ -626,7 +626,7 @@ footer {
     text-align: center;
     position: absolute;
     right: 0px;
-    top: 69.5px;
+    top: 68px;
     z-index: 1;
   }
   #hidden:checked ~ .invert_border_right {

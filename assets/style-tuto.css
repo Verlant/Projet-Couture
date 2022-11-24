@@ -80,14 +80,16 @@ h2 {
   height: 25%;
   border: 3px solid var(--secondary-color);
   border-radius: 25px;
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 50%,
+    transparent 50%
+  );
 }
 
 .img-container-tuto {
   width: 50%;
   height: 100%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: var(--secondary-color);
 }
 
 .logo-tuto {
@@ -274,9 +276,6 @@ h2 {
   .img-container-tuto {
     width: 50%;
     height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: var(--secondary-color);
   }
   /* end page tuto */
 
