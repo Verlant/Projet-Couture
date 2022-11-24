@@ -26,6 +26,7 @@
   width: 1113px;
   height: 598px;
   border-radius: 50px;
+  align-self: center;
 }
 
 .cadre_planning {
@@ -78,25 +79,31 @@
     ". note_horraires note_horraires note_horraires note_horraires note_horraires";
 }
 
-.triangle_even_exep1 {
+
+.cadre_triangle_even_exep {
+  position: relative;
+}
+
+.triangle_even_exep_blue {
   position: absolute;
-  margin-top: 70px;
-  margin-left: 50px;
+  top: 70px;
+  left: 50px;
   width: 1340px;
   height: 73px;
   background-color: var(--secondary-light);
 }
 
-.triangle_even_exep2 {
+.triangle_even_exep_gold {
   position: absolute;
   width: 0;
   height: 0;
   border-left: 0px solid transparent;
   border-right: 1340px solid transparent;
   border-top: 453px solid var(--secondary-light);
-  margin-top: 143px;
-  margin-bottom: 70px;
-  margin-left: 50px;
+  top: 143px;
+  bottom: 70px;
+  left: 50px;
+
 }
 
 .cadre_nos {
@@ -117,7 +124,7 @@
 
 #titre_even_exep {
   width: 230px;
-  height: 173px;
+  height: 0px;
   align-self: center;
   margin-left: 15px;
   display: flex;
@@ -151,6 +158,10 @@
   width: 372px;
   height: 117px;
   margin-top: 15px;
+}
+
+.costum_girl {
+  grid-area: costum_girl;
 }
 
 .costum_boy {
@@ -243,12 +254,12 @@
 }
 
 .baniere_titre {
+  position: relative;
   width: 1340px;
   height: 83px;
   background-color: var(--secondary-light);
   margin-left: 50px;
   margin-top: 78px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,18 +320,8 @@
   background-color: var(--secondary-light);
 }
 
-.triangle_even_exep_gold1 {
-  position: absolute;
-  margin-top: 103px;
-  margin-left: 50px;
-  width: 0;
-  height: 0;
-  border-left: 670px solid transparent;
-  border-right: 670px solid transparent;
-  border-bottom: 48px solid var(--gold);
-}
-
 .baniere_exep {
+  position: relative;
   width: 1340px;
   height: 83px;
   background-color: var(--gold);
@@ -331,6 +332,21 @@
   align-items: center;
   font-size: 3.5em;
   color: var(--secondary-dark);
+}
+
+.cadre_triangle_even {
+  position: relative;
+}
+
+.triangle_even_exep_gold1 {
+  position: absolute;
+  margin-top: 103px;
+  margin-left: 50px;
+  width: 0;
+  height: 0;
+  border-left: 670px solid transparent;
+  border-right: 670px solid transparent;
+  border-bottom: 48px solid var(--gold);
 }
 
 .triangle_even_exep_gold2 {
@@ -635,8 +651,11 @@
   }
 
   /* Version _ Mobile _ Début Page Évènements **********************************************************/
+  .cadre_triangle_even_exep {
+    position: relative;
+  }
 
-  .triangle_even_exep1 {
+  .triangle_even_exep_blue {
     display: none;
   }
 
@@ -685,35 +704,42 @@
   }
 
   .cadre_nos {
-    grid-area: cadre_nos;
+    position: absolute;
     width: 350px;
     height: 27px;
     border-radius: 0px;
     padding: 0;
-    font-size: 1em;
-    margin-top: 0px;
+    font-size: 0.9em;
     justify-content: center;
-    position: absolute;
     left: 14px;
-    bottom: 563px;
+    top: 240px;
   }
+.cadre_nos h1 {
+margin-left: 12px;
+}
 
-  .cadre_nos_triangle {
+
+  .cadre_nos_triangle{
+    position: relative;
+  }
+  .nos_triangle {
     position: absolute;
-    margin-left: 10px;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
     border-top: 50px solid var(--secondary-dark);
-    left: 10px;
-    bottom: 514px;
+    left: -87px;
+    top: -460px;
+
   }
 
   #titre_even_exep {
     padding-top: 8px;
   }
-
+.cadre_note_horraires{
+  position: relative;
+}
   .note_horraires {
-    grid-area: note_horraires;
+    position: absolute;
     width: 200px;
     height: 24px;
     border-radius: 10px;
@@ -722,8 +748,8 @@
     font-size: 0.52em;
     text-align: center;
     position: absolute;
-    margin-left: 81px;
-    bottom: 541px;
+    margin-left: 79px;
+    bottom: 437px;
   }
 
   .conatenaire {
@@ -743,6 +769,7 @@
   .costum_girl img {
     width: 89px;
     height: 190px;
+    margin-bottom: 500px;
   }
 
   .papa_noel img {
@@ -768,6 +795,10 @@
 
   .costum_boy {
     grid-area: costum_boy;
+  }
+
+  .costum_girl {
+    grid-area: costum_girl;
   }
 
   .image_theme {
@@ -808,17 +839,17 @@
     margin-top: 50px;
   }
 
-  .triangle_even_exep2 {
+  .triangle_even_exep_gold {
     position: absolute;
     width: 0;
     height: 0;
     border-left: 409px solid transparent;
     border-right: 0px solid transparent;
     border-top: 370px solid var(--gold);
-    bottom: 48px;
     box-shadow: none;
-    margin-left: -9px;
+    left: -9px;
     rotate: 90deg;
+    top: 125px;
   }
 
   .cliquer_left {
@@ -893,15 +924,9 @@
     border-radius: 10px;
   }
 
-  .triangle_even_exep_gold1 {
-    margin-top: 31px;
-    margin-left: 10px;
-    border-left: 185px solid transparent;
-    border-right: 185px solid transparent;
-    border-bottom: 10px solid var(--gold);
-  }
 
   .baniere_exep {
+    position: relative;
     width: 370px;
     height: 16px;
     margin-top: 40px;
@@ -909,7 +934,22 @@
     font-size: 0.8em;
   }
 
+  .cadre_triangle_even {
+    position: relative;
+  }
+
+  .triangle_even_exep_gold1 {
+    position: absolute;
+    margin-top: 31px;
+    margin-left: 10px;
+    border-left: 185px solid transparent;
+    border-right: 185px solid transparent;
+    border-bottom: 10px solid var(--gold);
+  }
+
+
   .triangle_even_exep_gold2 {
+    position: absolute;
     margin-left: 10px;
     border-left: 185px solid transparent;
     border-right: 185px solid transparent;
