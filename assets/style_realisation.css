@@ -29,7 +29,7 @@
     opacity: 0.6;
     border-radius: 20px;
     filter: sepia(60%);
-    filter: blur(20%);
+    filter: blur(20px);
     filter: saturate(50%);
   }
   
@@ -81,7 +81,7 @@
   
   #dimension_bloc_post {
     width: 1440px;
-    height: 100;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -579,7 +579,7 @@
     }
 
     .li_component{
-      width: none;
+      /* width: none; */
       height: 100px;
     }
 
