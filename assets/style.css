@@ -528,7 +528,7 @@ footer {
 
 /* start Version Mobile */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
   /* start header */
   header {
     width: 390px;

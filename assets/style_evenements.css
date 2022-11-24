@@ -1,10 +1,6 @@
 @import url(style.css);
 
-* {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
-}
+
 
 #recherche {
   width: 92px;
@@ -654,7 +650,7 @@
 /* Début Version mobile ******************************************************/
 /* ************************************************************************* */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
   #recherche {
     width: 52px;
     height: 22px;
@@ -723,7 +719,7 @@
   .cadre_nos {
     grid-area: cadre_nos;
     width: 350px;
-    height: 26px;
+    height: 27px;
     border-radius: 0px;
     padding: 0;
     font-size: 1em;
@@ -731,7 +727,7 @@
     justify-content: center;
     position: absolute;
     left: 14px;
-    bottom: 564px;
+    bottom: 563px;
   }
 
   .cadre_nos_triangle {
@@ -861,7 +857,7 @@
     border-top: 370px solid var(--gold);
     bottom: 48px;
     box-shadow: none;
-    margin-left: -10px;
+    margin-left: -9px;
     rotate: 90deg;
   }
 
