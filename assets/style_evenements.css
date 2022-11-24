@@ -97,11 +97,7 @@
   margin-top: 143px;
   margin-bottom: 70px;
   margin-left: 50px;
-
 }
-
-
-
 
 .cadre_nos {
   grid-area: cadre_nos;
@@ -127,7 +123,6 @@
   display: flex;
   align-content: center;
   align-items: center;
-
 }
 
 .costum_boy img,
@@ -192,8 +187,6 @@
   margin-left: 30px;
   text-align: center;
   line-height: 130%;
-
-
 }
 
 .calendrier_halloween {
@@ -203,7 +196,6 @@
 .calendrier_noel {
   grid-area: calendrier_noel;
 }
-
 
 .cliquer_left {
   grid-area: cliquer_left;
@@ -264,7 +256,6 @@
   color: var(--gold);
 }
 
-
 .triangle_nos_ateliers2 {
   position: absolute;
   width: 0;
@@ -273,7 +264,6 @@
   border-left: 670px solid transparent;
   border-right: 670px solid transparent;
   border-top: 50px solid var(--secondary-light);
-
 }
 
 .nom_atelier {
@@ -301,7 +291,6 @@
 .atelier_flex h1 {
   margin-bottom: 40px;
 }
-
 
 .texte_atelier {
   margin-left: 0px;
@@ -331,7 +320,6 @@
   border-bottom: 48px solid var(--gold);
 }
 
-
 .baniere_exep {
   width: 1340px;
   height: 83px;
@@ -353,7 +341,6 @@
   border-left: 670px solid transparent;
   border-right: 670px solid transparent;
   border-top: 50px solid var(--gold);
-
 }
 
 .note_horaires {
@@ -363,9 +350,7 @@
   font-size: 1.5em;
   font-style: italic;
   margin-top: 60px;
-
 }
-
 
 .atelier_exceptionnel {
   width: 1340px;
@@ -381,7 +366,6 @@
   grid-template-areas:
     "a1 a2 a3"
     "a1 a2 b1";
-
 }
 
 .photo_girl {
@@ -431,7 +415,6 @@
 
 .titre_atelier_exep2 {
   width: 530px;
-
 }
 
 .description {
@@ -442,7 +425,6 @@
   font-size: 2em;
   margin-top: 50px;
   margin-left: 60px;
-
 }
 
 .fond_light {
@@ -450,7 +432,6 @@
 }
 
 /* Fin Page Nos ateliers ******************************************************/
-
 
 /* Début Page Évènements et moments marquant ******************************************************/
 .VectorLeftMarquant_porte,
@@ -483,7 +464,6 @@
   border-left: 670px solid transparent;
   border-right: 670px solid transparent;
   border-top: 85px solid var(--secondary-color);
-
 }
 
 .baniere {
@@ -509,21 +489,18 @@
 
 .fete_recup {
   grid-area: c;
-
 }
 
 .img_vacancesrecup {
   width: 530px;
   height: 296px;
   border-radius: 20px;
-
 }
 
 .img_porte_ouverte {
   width: 642px;
   height: 710px;
   border-radius: 20px;
-
 }
 
 .legende-porte {
@@ -543,7 +520,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .container_porte_ouverte {
@@ -566,7 +542,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-
 }
 
 .images_porte_ouverte h2 {
@@ -578,7 +553,6 @@
 }
 
 .images_porte_ouverte {
-
   font-size: 2em;
   color: var(--secondary-dark);
   display: grid;
@@ -600,7 +574,6 @@
 .arrow_right {
   grid-area: arrow_right;
   margin-top: 124px;
-
 }
 
 .photo1 {
@@ -632,7 +605,7 @@
   height: 59px;
 }
 
-.images_porte_ouverte>.photo1,
+.images_porte_ouverte > .photo1,
 .photo2,
 .photo3 {
   width: 307px;
@@ -654,7 +627,6 @@
   #recherche {
     width: 52px;
     height: 22px;
-
   }
 
   /* start general */
@@ -668,16 +640,13 @@
     display: none;
   }
 
-
   /* end general */
   .even_cadre_baniere {
     display: none;
-
   }
 
   .even_baniere img {
     display: none;
-
   }
 
   .cadre_planning {
@@ -699,7 +668,6 @@
     width: 336px;
     height: 167px;
     border-radius: 0%;
-
   }
 
   .fond_exceptionnel {
@@ -738,7 +706,6 @@
     border-top: 50px solid var(--secondary-dark);
     left: 10px;
     bottom: 514px;
-
   }
 
   #titre_even_exep {
@@ -760,7 +727,6 @@
   }
 
   .conatenaire {
-
     display: grid;
     grid-template-columns: 89px 89px 89px 89px;
     grid-template-rows: 100px 100px 100px 100px;
@@ -771,7 +737,6 @@
       "calendrier_halloween calendrier_halloween costum_girl costum_boy"
       "image_theme papa_noel atelier_creation atelier_creation"
       "image_theme papa_noel calendrier_noel calendrier_noel";
-
   }
 
   .costum_boy img,
@@ -779,7 +744,6 @@
     width: 89px;
     height: 190px;
   }
-
 
   .papa_noel img {
     width: 108px;
@@ -817,7 +781,6 @@
   .calendrier_halloween {
     grid-area: calendrier_halloween;
     margin-left: 25px;
-
   }
 
   .calendrier_noel {
@@ -833,7 +796,6 @@
     font-size: 1em;
     margin-top: 40px;
     color: var(--gold);
-
   }
 
   .atelier_creation {
@@ -844,8 +806,6 @@
     font-size: 1em;
     margin-left: 10px;
     margin-top: 50px;
-
-
   }
 
   .triangle_even_exep2 {
@@ -861,22 +821,15 @@
     rotate: 90deg;
   }
 
-
   .cliquer_left {
     display: none;
   }
 
   .cliquer_right {
     display: none;
-
   }
 
-
-
-
-
   /* Version _ Mobile _ Fin Page Évènements **********************************************************/
-
 
   /* Version _ Mobile _ Début Page Nos ateliers **********************************************************/
 
@@ -896,13 +849,11 @@
     font-size: 1.8em;
   }
 
-
   .triangle_nos_ateliers2 {
     margin-left: 10px;
     border-left: 185px solid transparent;
     border-right: 185px solid transparent;
     border-top: 10px solid var(--secondary-light);
-
   }
 
   .nom_atelier {
@@ -942,7 +893,6 @@
     border-radius: 10px;
   }
 
-
   .triangle_even_exep_gold1 {
     margin-top: 31px;
     margin-left: 10px;
@@ -950,7 +900,6 @@
     border-right: 185px solid transparent;
     border-bottom: 10px solid var(--gold);
   }
-
 
   .baniere_exep {
     width: 370px;
@@ -965,15 +914,12 @@
     border-left: 185px solid transparent;
     border-right: 185px solid transparent;
     border-top: 10px solid var(--gold);
-
   }
 
   .note_horaires {
     font-size: 0.5em;
     margin-top: 15px;
-
   }
-
 
   .atelier_exceptionnel {
     width: 370px;
@@ -986,7 +932,6 @@
     display: grid;
     grid-template-columns: 59px 59px 254px;
     grid-template-rows: 46px 108px;
-
   }
 
   .atelier_exceptionnel img {
@@ -1004,12 +949,10 @@
     padding: 6px;
     line-height: 130%;
     text-align: center;
-
   }
 
   .titre_atelier_exep {
     margin-right: 0px;
-
   }
 
   .description {
@@ -1026,7 +969,6 @@
 
   /* Version _ Mobile _ Fin Page Nos ateliers **********************************************************/
 
-
   /* Version _ Mobile _ Début Page evenements et moments marquants **********************************************************/
 
   .VectorLeftMarquant_porte,
@@ -1040,7 +982,6 @@
     height: 50px;
     z-index: 1;
     margin-bottom: 40px;
-
   }
 
   .baniere_titre_marquant {
@@ -1058,7 +999,6 @@
     border-left: 185px solid transparent;
     border-right: 185px solid transparent;
     border-top: 24px solid var(--secondary-color);
-
   }
 
   .baniere {
@@ -1080,7 +1020,6 @@
 
   .VectorLeftMarquant_porte {
     grid-area: a1;
-
   }
 
   .porte_ouverte {
@@ -1091,10 +1030,8 @@
     grid-area: a3;
   }
 
-
   .VectorLeftMarquant_vacances {
     grid-area: b1;
-
   }
 
   .vacances_creation {
@@ -1103,33 +1040,24 @@
 
   .VectorRightMarquant_vacances {
     grid-area: b3;
-
   }
-
 
   .VectorLeftMarquant_fete {
     grid-area: c1;
-
-
   }
 
   .fete_recup {
     grid-area: c2;
-
   }
 
   .VectorRightMarquant_fete {
     grid-area: c3;
-
-
-
   }
 
   .img_porte_ouverte {
     width: 315px;
     height: 284px;
     border-radius: 20px;
-
   }
 
   .legende-porte {
@@ -1147,7 +1075,6 @@
     height: 191px;
     border-radius: 20px;
     margin-left: 12px;
-
   }
 
   .legende_vacances_recup {
@@ -1157,14 +1084,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   .container_porte_ouverte {
     display: none;
-
   }
-
 }
 
 /* Version _ Mobile _ Fin Page evenements et moments marquants **********************************************************/
