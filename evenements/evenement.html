@@ -50,21 +50,11 @@
       <div id="bar_recherche">
         <form action="recherche" id="form_recherche">
           <label for="loupe"></label>
-          <input
-            type="image"
-            src="../assets/img/Vector.png"
-            alt="icone de loupe"
-            id="loupe"
-          />
+          <input type="image" src="../assets/img/Vector.png" alt="icone de loupe" id="loupe" />
           <p>|</p>
 
           <label for="recherche"></label>
-          <input
-            type="text"
-            id="recherche"
-            placeholder="Rechercher..."
-            maxlength="50"
-          />
+          <input type="text" id="recherche" placeholder="Rechercher..." maxlength="50" />
         </form>
       </div>
     </nav>
@@ -83,8 +73,84 @@
       </div>
       <div class="even_planning">
         <a href="../evenements/even_NosAteliers.html">
-          <img src="../assets/img/planning.png" alt="planning hébdomadaire" />
         </a>
+
+
+
+        <div class="planning-table-container">
+            <table class="planning-table">
+              <thead>
+                <tr>
+                  <td class="table-time"></td>
+                  <td>Lundi</td>
+                  <td>Mardi</td>
+                  <td colspan="2">Mercredi</td>
+                  <td>Jeudi</td>
+                  <td colspan="2">Vendredi</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-time" rowspan="2">14h00</td>
+                  <td class="planning-table-couture" rowspan="7">Couture</td>
+                  <td></td>
+                  <td class="planning-table-tricot" rowspan="9">Tricot et Crochet</td>
+                  <td></td>
+                  <td></td>
+                  <td class="planning-table-tricot" rowspan="9">Tricot et Crochet</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="planning-table-enfant" rowspan="4">Atelier Enfant</td>
+                  <td class="planning-table-couture" rowspan="8">Couture</td>
+                  <td></td>
+                  <td class="planning-table-bebe" rowspan="4">Atelier Bébé</td>
+                </tr>
+                <tr>
+                  <td class="table-time" rowspan="2">15h00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="table-time" rowspan="2">16h00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="planning-table-couture" rowspan="4">Couture</td>
+                  <td></td>
+                  <td class="planning-table-couture" rowspan="4">Couture</td>
+                </tr>
+                <tr>
+                  <td class="table-time" rowspan="2">17h00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="table-time">18h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td>Salle 1</td>
+                  <td>Salle 2</td>
+                  <td>Salle 1</td>
+                  <td>Salle 2</td>
+                  <td></td>
+                  <td>Salle 1</td>
+                  <td>Salle 2</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
       </div>
     </section>
     <div class="cadre_triangle_even_exep">
@@ -109,7 +175,7 @@
           <div class="costum_girl">
             <!-- <a href="../evenements/even_NosAteliers.html#anchor2-even_exep"> -->
 
-              <img src="../assets/img/costum_girl.jfif" alt="costume fille pour halloween" />
+            <img src="../assets/img/costum_girl.jfif" alt="costume fille pour halloween" />
           </div>
           <div class="costum_boy">
             <img src="../assets/img/costum_boy.jpg" alt="costume garçon pour halloween" />
@@ -151,13 +217,14 @@
           <div class="cliquer_right">
             <p>Cliquer pour ajouter à votre agenda</p>
           </div>
-          <div class="cadre_note_horraires">
-            <div class="note_horraires">
-              <p>
-                * Ces ateliers remplacent les ateliers habituels. Les horaires
-                ne changent pas
-              </p>
-            </div>
+          <div class="position_cadre_note_horraires">
+              <div class="note_horraires">
+                <p>
+                  * Ces ateliers remplacent les ateliers habituels. Les horaires
+                  ne changent pas
+                </p>
+              </div>
+            </>
           </div>
         </div>
 
