@@ -594,7 +594,7 @@
   color: var(--secondary-dark);
   display: grid;
   grid-template-columns: 90px 310px 310px 310px 90px;
-  grid-template-rows: 310px 60px 200pxpx;
+  grid-template-rows: 310px 1px 30px;
   gap: 40px;
   margin-left: 20px;
   grid-template-areas:
@@ -741,14 +741,16 @@
     left: 14px;
     top: 240px;
   }
-.cadre_nos h1 {
-margin-left: 12px;
-}
+
+  .cadre_nos h1 {
+    margin-left: 12px;
+  }
 
 
-  .cadre_nos_triangle{
+  .cadre_nos_triangle {
     position: relative;
   }
+
   .nos_triangle {
     position: absolute;
     border-left: 175px solid transparent;
@@ -762,9 +764,11 @@ margin-left: 12px;
   #titre_even_exep {
     padding-top: 8px;
   }
-.cadre_note_horraires{
-  position: relative;
-}
+
+  .cadre_note_horraires {
+    position: relative;
+  }
+
   .note_horraires {
     position: absolute;
     width: 200px;
@@ -882,7 +886,7 @@ margin-left: 12px;
     border-top: 370px solid var(--gold);
     box-shadow: none;
     left: -9px;
-    rotate: 90deg;
+    transform: rotate(90deg);
     top: 125px;
   }
 
@@ -896,12 +900,7 @@ margin-left: 12px;
 
   }
 
-
-
-
-
   /* Version _ Mobile _ Fin Page Évènements **********************************************************/
-
 
   /* Version _ Mobile _ Début Page Nos ateliers **********************************************************/
 
