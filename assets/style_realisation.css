@@ -419,7 +419,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .bloc_question_reponse {
@@ -745,6 +745,7 @@
     width: 390px;
     height: 75px;
     transform: none;
+    margin-bottom: 50px;
   }
 
   .bouton_envoyer_q {
