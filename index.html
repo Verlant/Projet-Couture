@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/style.css"
+      type="text/css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/courgette" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
     <title>Accueil</title>
   </head>
-
   <body>
     <header>
       <nav id="h_navbar">
@@ -16,25 +23,41 @@
             <img src="assets/img/logo.png" alt="logo" class="logo_couture" />
           </a>
         </div>
-
+        <label for="hidden" class="burger_menu"></label>
+        <input type="checkbox" name="hidden" id="hidden" />
+        <div class="invert_border_right"></div>
+        <div class="invert_border_left"></div>
         <ul id="pages">
-          <a href="evenements/evenement.html">
-            <li>Évènement</li>
-          </a>
-          <a href="realisation/realisation.html">
-            <li>Réalisation</li>
-          </a>
-          <a href="tuto/tuto.html">
-            <li>Tuto</li>
-          </a>
-          <a href="a_propos.html">
-            <li>&Agrave; propos</li>
-          </a>
+          <li>
+            <a href="evenements/evenement.html">
+              <p>Évènement</p>
+            </a>
+          </li>
+          <li>
+            <a href="realisation/realisation.html">
+              <p>Réalisation</p>
+            </a>
+          </li>
+          <li>
+            <a href="tuto/tuto.html">
+              <p>Tuto</p>
+            </a>
+          </li>
+          <li>
+            <a href="a_propos.html">
+              <p>&Agrave; propos</p>
+            </a>
+          </li>
         </ul>
         <div id="bar_recherche">
           <form action="recherche" id="form_recherche">
             <label for="loupe"></label>
-            <input type="image" src="assets/img/Vector.png" id="loupe" />
+            <input
+              type="image"
+              src="assets/img/Vector.png"
+              alt="icone de loupe"
+              id="loupe"
+            />
             <p>|</p>
 
             <label for="recherche"></label>
@@ -70,7 +93,7 @@
           </p>
         </div>
         <div id="calendrier">
-          <img src="assets/img/calendrier.PNG" alt="" />
+          <img src="assets/img/calendrier.PNG" id="calendrier_index" alt="" />
         </div>
       </section>
 
@@ -97,11 +120,11 @@
             Article de Média parlant de l'association Bien Cousue
           </p>
           <div id="bouton_play">
-            <img src="assets/img/Play.png" alt="icone de lecteur video" />
+            <img src="assets/img/Play.png" id="bouton_bouton_play" alt="icone de lecteur video" />
           </div>
         </div>
       </section>
-      <section id="section_realisation">
+      <div id="section_realisation">
         <img
           id="fleche_gauche"
           src="assets/img/VectorLeft.png"
@@ -111,8 +134,8 @@
           <div id="der_realisation">
             <p class="text_white">Dernière réalisation commentable Aléatoire</p>
             <div id="like_realisation">
-              <img src="assets/img/like.png" alt="pouce like" />
-              <img src="assets/img/coeur.png" alt="coeur" />
+              <img class="img_der" src="assets/img/like.png" alt="pouce like" />
+              <img class="img_der" src="assets/img/coeur.png" alt="coeur" />
             </div>
           </div>
           <div id="espace_commentaire">
@@ -124,7 +147,7 @@
           src="assets/img/VectorRight.png"
           alt="fleche droite"
         />
-      </section>
+      </div>
     </main>
     <footer>
       <nav id="footer_nav">
@@ -145,7 +168,7 @@
           </a>
         </div>
         <div>
-          <a href="a_propos.html" class="footer_circle">
+          <a href="a_propos.html#contactez-nous" class="footer_circle">
             <p>Contactez</p>
             <p>Nous</p>
           </a>
@@ -153,7 +176,11 @@
         <div>
           <a href="realisation/forum.html" class="footer_circle">
             <p>Forum</p>
-            <img src="assets/img/forum.png" class="footer-img" />
+            <img
+              src="assets/img/forum.png"
+              alt="icone forum"
+              class="footer-img"
+            />
           </a>
         </div>
         <div id="legislation">

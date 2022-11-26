@@ -1,0 +1,806 @@
+@import url(style.css);
+
+/* page réalisation */
+
+
+#main_realisation {
+    width: 1440px;
+    height: 2550px;
+    background-color: var(--primary-light);
+  }
+  
+  #bloc_image_realisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #titre_realisation {
+    
+    font-size: 7em;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+  }
+  
+  #image_page_realisation {
+    width: 1440px;
+    height: 600px;
+    opacity: 0.6;
+    border-radius: 20px;
+    filter: sepia(60%);
+    filter: blur(20px);
+    filter: saturate(50%);
+  }
+  
+  #nav_controle_2 {
+    margin-top: 65px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #nav_bar_deux {
+    width: 1440px;
+    height: 193px;
+    background-color: var(--primary-color);
+    margin-top: 40px;
+    transform: translate(0, -115px);
+  }
+  
+  .li_component {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  #list_p_lien {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translate(0, 20px);
+  }
+  
+  .gap_li {
+    font-size: 1.8em;
+  }
+  
+  .gap_li_cdc{
+    font-size: 1.6em;
+  }
+
+  .size_image {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+  }
+  
+  #dimension_bloc_post {
+    width: 1440px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #bloc_post_recent {
+    border: 2px solid var(--secondary-dark);
+    width: 500px;
+    height: 70px;
+    background-color: var(--gold);
+    border-radius: 100px;
+    transform: translate(0, -40px);
+  }
+  #p_post_recent {
+    font-size: 2.5em;
+    width: 500px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  #component_realisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .li_image_realisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Verdana, sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+
+  
+  .image_realisation {
+    border: 3px solid var(--secondary-dark);
+    border-radius: 20px;
+    height: 300px;
+    width: 370px;
+  }
+  
+  #voir_plus {
+    width: 230px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: var(--gold);
+    font-size: 1.7em;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(1150px, 60px);
+  }
+
+  #img_haut_page_real{
+    width: 30px;
+    height: 30px;
+    opacity: 40%;
+    transform: rotate(90deg);
+    opacity: 100%;
+  }
+
+  
+  /* Fin page réalisation */
+
+  /* Nos coups de coeur */
+
+#main_nos_favoris {
+    width: 1440px;
+    height: 2375px;
+    background-color: var(--primary-light);
+  }
+  
+  #section_coup_dcoeur {
+    transform: translate(0, -70px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .flex_realisation {
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    font-size: 1.2em;
+    transform: translate(60px, 0);
+    margin-bottom: 200px;
+  }
+  
+  .titre_coeur {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .image_coeur {
+    border: 3px solid var(--secondary-dark);
+    width: 518px;
+    height: 367px;
+  }
+  
+  .texte_coeur {
+    margin-top: 35px;
+    font-weight: bold;
+  }
+  
+  #fleche_haut_page {
+    border: 1px solid var(--secondary-dark);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-dark);
+    opacity: 50%;
+    /* transform: translate(1338px, 167px); */
+    transform: translate(60px, 0px);
+    position: relative;
+  }
+  
+  #img_haut_page {
+    width: 30px;
+    height: 30px;
+    opacity: 40%;
+    transform: rotate(90deg);
+    opacity: 100%;
+  }
+  
+
+  /* Fin page Nos coups de coeur */
+
+  /* Technique dossier Réalisation */
+
+  #mensuration_page_technique {
+    width: 1440px;
+    height: 2900px;
+    background-color: var(--primary-light);
+  }
+
+  #titre_realisation{
+    text-align: center;
+    filter: none;
+  }
+  
+  #titre_crochet {
+    width: 273px;
+    height: 51px;
+    margin-left: 40px;
+    transform: translate(0, -50px);
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gold);
+    color: var(--secondary-color);
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .flex_image_fleche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .fleche_gauche_technique{
+    height: 40px;
+    width: 30px;
+  }
+
+  .image_technique{
+    width: 450px;
+    height: 260px;
+    border-radius: 10%;
+    border: 3px solid var(--secondary-dark);
+  }
+
+  .flex_image_texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .image_desc{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .titre_image_real{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .mensuration_sect{
+    margin-top: 250px;
+  }
+/* 
+  .li_ncdc{
+    width: 160px;
+    height: 100px;
+  } */
+  /* fin page technique_realisation */
+
+  /* Debut page Forum */
+
+  #main_forum{
+    width: 1440px;
+    height: 4160px;
+  }
+
+  .flex_component_forum{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #bloc_post_forum{
+    width: 1291px;
+    height: 484px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flex_items_forum{
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #votre_titre{
+    width: 846px;
+    height: 44px;
+    border-radius: 40px;
+    background-color: var(--primary-light);
+    margin-top: 60px;
+    font-size: 1em;
+    padding-left: 35px;
+  }
+
+  #zone_texte_forum{
+    width: 1200px;
+    height: 250px;
+    background-color: var(--primary-light);
+    border-radius: 40px;
+    border: none;
+    /* text-align: center; */
+    font-size: 3em;
+    padding-left: 40px;
+  }
+
+  .flex_texte_forum{
+    width: 1291px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+
+  }
+
+
+  .button_submit_forum{
+    width: 200px;
+    height: 57px;
+    border-radius: 60px;
+    background-color: var(--primary-light);
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translate(1050px, -80px);
+    cursor: pointer;
+  }
+
+  .send_png{
+    width: 30px;
+    height: 30px;
+  }
+
+  .boite_soucis{
+    width: 666px;
+    height: 86px;
+    background-color: var(--gold);
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 60px;
+    color: var(--secondary-color);
+  }
+
+  #bloc_search_forum{
+    width: 333px;
+    height: 69px;
+    background-color: var(--gold);
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(1070px, -75px);
+  }
+
+  #search_nav{
+    border: none;
+    height: 40px;
+    border-radius: 60px;
+    background-color: var(--gold);
+    font-size: 1.2em;
+  }
+
+  #flex_bloc_qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .bloc_question_reponse{
+    width: 1294px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .okay{
+    width: 1130px;
+    height: 54px;
+    background-color: var(--primary-light);
+    border-radius: 60px;
+    font-size: 2em;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .flex_bloc_qr{
+    width: 1177px;
+    height: 340px;
+    background-color: var(--primary-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    margin-top: 15px;
+  }
+
+  .bloc_q_user{
+    width: 1084px;
+    height: 50px;
+    background-color: var(--secondary-dark);
+    border-radius: 60px;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5px;
+    padding: 20px;
+
+  }
+
+  .bloc_qr{
+    width: 1074px;
+    height: 40px;
+    background-color: var(--secondary-dark);
+    margin-top: 20px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-size: 1.8em;
+    padding: 20px;
+}
+
+.formulaire_forum{
+    width: 1055px;
+    height: 98px;
+    background-color: var(--secondary-color);
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 60px;
+    transform: translate(100px, 0);
+    color: var(--gold);
+}
+
+#repondre{
+    width: 700px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    font-size: 2.6em;
+    border: none;
+    color: var(--primary-light);
+    padding-left: 15px;
+}
+
+.bouton_envoyer_q{
+    width: 196px;
+    height: 38px;
+    background-color: var(--primary-light);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.55em;
+    cursor: pointer;
+}
+
+.img_submit_q{
+    width: 30px;
+    height: 30px;
+}
+
+  /* Fin page Forum */
+
+
+  @media screen and (max-width: 390px ) {
+
+    #main_realisation{
+      width: 390px;
+      height: 3675px;
+    }
+    #component_realisation{
+      flex-direction: column;
+    }
+    #voir_plus{
+      transform : translate(140px, 45px);
+    }
+    #fleche_haut_page{
+      display: none;
+    }
+
+    #nav_bar_deux{
+      transform: none;
+      width: 390px;
+      height: 120px;
+    }
+
+    #nav_controle_2{
+      margin-top: 10px;
+      margin-bottom: 80px;
+    }
+
+    .gap_li{
+      font-size: 1em;
+    }
+
+    .gap_li_cdc{
+      font-size: 0.7em;
+    }
+    .image_realisation{
+      width: 334px;
+      height: 190px;
+    }
+
+    .li_component{
+      /* width: none; */
+      height: 100px;
+    }
+
+    .size_image{
+      width: 75px;
+      height: 75px;
+    }
+
+    #titre_realisation{
+      font-size: 2.5em;
+    }
+
+    #image_page_realisation{
+      height: 350px;
+      width: 390px;
+    }
+
+    #dimension_bloc_post{
+      display: none;
+    }
+
+    .li_image_realisation{
+      font-size: 1.5em;
+      align-items: start;
+      padding-left: 10px;
+    }
+
+    #voir_plus{
+      display: none;
+    }
+
+    /* Page Nos coups de coeur mobile */
+
+    #section_coup_dcoeur{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 450px;
+      /* transform: translate(135px, 0px); */
+    }
+
+    .flex_realisation{
+      transform: translate(200px, 0);
+      width: 390px;
+      margin-bottom: 75px;
+      margin-top: 50px;
+    }
+
+    .texte_coeur{
+      font-size: 0.75em;
+      width: 350px;
+      /* transform: translate(135px, 0); */
+      text-align: left;
+      padding-left: 30px;
+    }
+    #main_nos_favoris{
+      height: 3250px;
+      width: 390px;
+
+    }
+
+    .image_coeur{
+      width: 320px;
+      height: 220px;
+    }
+
+    .titre_coeur{
+      font-size: 1.3em;
+    }
+
+    /* Page Forum Mobile */
+
+    #main_forum{
+      height: 3700px;
+      width: 390px;
+    }
+
+    #votre_titre{
+      width: 320px;
+      height: 35px;
+    }
+    .flex_items_forum{
+      flex-direction: column;
+      transform: translate(-443px, 10px);
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .flex_component_forum{
+      width: 390px;
+    }
+
+    #bloc_post_forum{
+      width: 390px;
+    }
+
+    #zone_texte_forum{
+      transform: translate(-450px, 40px);
+      width: 300px;
+    }
+
+    .button_submit_forum{
+      width: 150px;
+      height: 40px;
+      transform: translate(200px, -50px);
+
+    }
+
+    #display_none{
+      display: none;
+    }
+
+    .boite_soucis{
+      width: 180px;
+      height: 45px;
+      font-size: 0.53em;
+      margin-left: 10px;
+      margin-top: 50px;
+    }
+
+    #bloc_search_forum{
+      width: 150px;
+      height: 40px;
+      transform: translate(225px, -42.5px);
+    }
+
+    #search_nav{
+      width: 100px;
+      height: 35px;
+      font-size: 0.8em;
+    }
+
+    .bloc_question_reponse{
+      width: 390px;
+      height: 170px;
+    }
+
+    .okay{
+      width: 340px;
+      height: 22px;
+      font-size: 1.5em;
+    }
+
+    .flex_bloc_qr {
+      width: 380px;
+      height: 370px;
+
+    }
+    .bloc_q_user{
+      width: 275px;
+      height: 35px;
+    }
+    .bloc_qr{
+      width: 275px;
+      height: 35px;
+    }
+    .bloc_question_reponse {
+      width: 390px;
+      height: 500px;
+    }
+
+    #repondre{
+      width: 220px;
+      height: 60px;
+      font-size: 1.6em;
+    }
+
+    .formulaire_forum{
+      width: 390px;
+      height: 75px;  
+      transform: none;
+    }
+
+    .bouton_envoyer_q{
+      width: 150px;
+      height: 50px;
+    }
+
+    /* page technique */
+
+    #mensuration_page_technique{
+      height: 2950px;
+      width: 390px;
+    }
+
+    #titre_crochet{
+      transform: translate(-5px, -30px);
+    } 
+
+    .flex_image_texte2{
+      display: none;
+    }
+
+    .flex_image_texte{
+      width: 300px;
+    }
+
+    .fleche_gauche_technique{
+      transform: translate(0px, 55px);
+    }
+
+    .image_technique{
+      width: 300px;
+      height: 225px;
+    }
+
+    .titre_image_real{
+      margin-top: 120px;
+      margin-bottom: 50px;
+    } 
+
+
+
+
+  }
+
+
+  
