@@ -42,23 +42,6 @@
   padding-top: 20px;
 }
 
-/* .even_planning img {
-  width: 1200px;
-  height: 550px;
-  border-radius: 25px;
-} */
-
-/* Tableau Planning */
-
-
-/* td {
-  font-family: "Inter", sans-serif;
-}
-
-td {
-  font-family: "Courgette", sans-serif;
-} */
-
 .planning-table-container {
   margin-bottom: 50px;
 }
@@ -79,7 +62,7 @@ td {
   text-align: center;
   border: 3px solid var(--secondary-dark);
   font-family: "Inter", sans-serif;
-
+  vertical-align: middle;
 }
 
 .planning-table thead td,
@@ -103,7 +86,6 @@ td {
 .planning-table-tricot {
   background-color: #ead1dc;
 }
-
 
 .fond_exceptionnel {
   width: 1340px;
@@ -254,8 +236,6 @@ td {
   margin-left: 30px;
   text-align: center;
   line-height: 130%;
-
-
 }
 
 .calendrier_halloween {
@@ -286,7 +266,6 @@ td {
 
 .position_cadre_note_horraires {
   position: relative;
-
 }
 
 .note_horraires {
@@ -294,7 +273,7 @@ td {
   width: 972px;
   height: 61px;
   left: -360px;
-  top: 280px;
+  top: 365px;
   border-radius: 10px;
   background-color: var(--white);
   color: var(--secondary-dark);
@@ -333,7 +312,6 @@ td {
   color: var(--gold);
 }
 
-
 .triangle_nos_ateliers2 {
   position: absolute;
   width: 0;
@@ -367,7 +345,7 @@ td {
   margin-right: 30px;
 }
 
-.atelier_flex h1 {
+.atelier_flex h2 {
   margin-bottom: 40px;
 }
 
@@ -438,7 +416,6 @@ td {
   margin-top: 60px;
 
 }
-
 
 .atelier_exceptionnel {
   width: 1340px;
@@ -523,7 +500,6 @@ td {
 }
 
 /* Fin Page Nos ateliers ******************************************************/
-
 
 /* Début Page Évènements et moments marquant ******************************************************/
 .VectorLeftMarquant_porte,
@@ -632,7 +608,7 @@ td {
   flex-direction: column;
 }
 
-.container_porte_ouverte h1 {
+.container_porte_ouverte h2 {
   font-size: 3em;
   color: var(--secondary-dark);
   display: flex;
@@ -714,7 +690,6 @@ td {
 }
 
 /* Fin Page Évènements et moments marquant ******************************************************/
-
 /* ************************************************************************* */
 /* Fin Version Desktop ******************************************************/
 /* ************************************************************************* */
@@ -722,7 +697,6 @@ td {
 /* ************************************************************************* */
 /* Début Version mobile ******************************************************/
 /* ************************************************************************* */
-
 @media screen and (max-width: 391px) {
   #recherche {
     width: 52px;
@@ -730,11 +704,13 @@ td {
 
   }
 
-  /* start general */
+  /* general */
   main {
     width: 390px;
   }
-
+  .dimensionner{
+    height: 760px;
+  }
   /* Version _ Mobile _ Début Page Évènements **********************************************************/
   .cadre_triangle_even_exep {
     position: relative;
@@ -744,8 +720,6 @@ td {
     display: none;
   }
 
-
-  /* end general */
   .even_cadre_baniere {
     display: none;
 
@@ -775,10 +749,10 @@ td {
     padding: 0px;
   }
 
-  /* Tableau Planning */
   .planning-table-container {
     margin-bottom: 5px;
     font-size: 0.34em;
+
   }
 
   .planning-table {
@@ -792,6 +766,8 @@ td {
   .planning-table td {
     height: 8px;
     border: 1.4px solid var(--secondary-dark);
+    vertical-align: middle;
+
   }
 
   .fond_exceptionnel {
@@ -858,7 +834,7 @@ td {
     font-size: 0.52em;
     text-align: center;
     position: absolute;
-    left: -185px;
+    left: -100px;
     top: -463px;
   }
 
@@ -883,7 +859,6 @@ td {
     height: 190px;
     margin-bottom: 500px;
   }
-
 
   .papa_noel img {
     width: 108px;
@@ -953,7 +928,6 @@ td {
     margin-left: 10px;
     margin-top: 50px;
 
-
   }
 
   .triangle_even_exep_gold {
@@ -969,7 +943,6 @@ td {
     top: 125px;
   }
 
-
   .cliquer_left {
     display: none;
   }
@@ -982,7 +955,6 @@ td {
   /* Version _ Mobile _ Fin Page Évènements **********************************************************/
 
   /* Version _ Mobile _ Début Page Nos ateliers **********************************************************/
-
   .triangle_nos_ateliers1 {
     margin-top: 10px;
     margin-left: 10px;
@@ -998,7 +970,6 @@ td {
     margin-top: 19px;
     font-size: 1.8em;
   }
-
 
   .triangle_nos_ateliers2 {
     margin-left: 10px;
@@ -1024,7 +995,7 @@ td {
     margin-right: 10px;
   }
 
-  .atelier_flex h1 {
+  .atelier_flex h2 {
     margin-bottom: 10px;
     font-size: 1.5em;
   }
@@ -1044,7 +1015,6 @@ td {
     right: 30px;
     border-radius: 10px;
   }
-
 
   .baniere_exep {
     position: relative;
@@ -1068,22 +1038,18 @@ td {
     border-bottom: 10px solid var(--gold);
   }
 
-
   .triangle_even_exep_gold2 {
     position: absolute;
     margin-left: 10px;
     border-left: 185px solid transparent;
     border-right: 185px solid transparent;
     border-top: 10px solid var(--gold);
-
   }
 
   .note_horaires {
     font-size: 0.5em;
     margin-top: 15px;
-
   }
-
 
   .atelier_exceptionnel {
     width: 370px;
@@ -1096,7 +1062,6 @@ td {
     display: grid;
     grid-template-columns: 59px 59px 254px;
     grid-template-rows: 46px 108px;
-
   }
 
   .atelier_exceptionnel img {
@@ -1114,12 +1079,10 @@ td {
     padding: 6px;
     line-height: 130%;
     text-align: center;
-
   }
 
   .titre_atelier_exep {
     margin-right: 0px;
-
   }
 
   .description {
@@ -1136,9 +1099,7 @@ td {
 
   /* Version _ Mobile _ Fin Page Nos ateliers **********************************************************/
 
-
   /* Version _ Mobile _ Début Page evenements et moments marquants **********************************************************/
-
   .VectorLeftMarquant_porte,
   .VectorRightMarquant_porte,
   .VectorLeftMarquant_vacances,
@@ -1278,7 +1239,6 @@ td {
 }
 
 /* Version _ Mobile _ Fin Page evenements et moments marquants **********************************************************/
-
 /* ************************************************************************* */
 /* Début Version mobile ******************************************************/
 /* ************************************************************************* */
