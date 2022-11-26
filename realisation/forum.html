@@ -1,252 +1,324 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/style_realisation.css"
+      type="text/css" />
+    <link href="https://fonts.cdnfonts.com/css/courgette" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+    <title>Forum</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../assets/style_realisation.css" type="text/css" />
-  <link href="https://fonts.cdnfonts.com/css/courgette" rel="stylesheet" />
-  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
-  <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
-  <title>Forum</title>
-</head>
-
-<body>
-  <header>
-    <nav id="h_navbar">
-      <div id="logo">
-        <a href="../index.html" title="Accueil Bien cousue">
-          <img src="../assets/img/logo.png" alt="logo" class="logo_couture" />
-        </a>
+  <body>
+    <header>
+      <nav id="h_navbar">
+        <div id="logo">
+          <a href="../index.html" title="Accueil Bien cousue">
+            <img src="../assets/img/logo.png" alt="logo" class="logo_couture" />
+          </a>
+        </div>
+        <label for="hidden" class="burger_menu"></label>
+        <input type="checkbox" name="hidden" id="hidden" />
+        <div class="invert_border_right"></div>
+        <div class="invert_border_left"></div>
+        <ul id="pages">
+          <li>
+            <a href="../evenements/evenement.html">
+              <p>Évènement</p>
+            </a>
+          </li>
+          <li>
+            <a href="realisation.html">
+              <p>Réalisation</p>
+            </a>
+          </li>
+          <li>
+            <a href="../tuto/tuto.html">
+              <p>Tuto</p>
+            </a>
+          </li>
+          <li>
+            <a href="../a_propos.html">
+              <p>&Agrave; propos</p>
+            </a>
+          </li>
+        </ul>
+        <div id="bar_recherche">
+          <form action="recherche" id="form_recherche">
+            <label for="loupe"></label>
+            <input
+              type="image"
+              src="../assets/img/Vector.png"
+              alt="icone de loupe"
+              id="loupe" />
+            <p>|</p>
+            <label for="recherche"></label>
+            <input
+              type="text"
+              id="recherche"
+              placeholder="Rechercher..."
+              maxlength="50" />
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main id="main_forum">
+      <div id="bloc_image_realisation">
+        <h1 id="titre_realisation">Forum</h1>
+        <img
+          src="../assets/img/téléchargement.jpg"
+          alt="machine de couture"
+          id="image_page_realisation" />
       </div>
-      <label for="hidden" class="burger_menu"></label>
-      <input type="checkbox" name="hidden" id="hidden" />
-      <div class="invert_border_right"></div>
-      <div class="invert_border_left"></div>
-      <ul id="pages">
-        <li>
-          <a href="../evenements/evenement.html">
-            <p>Évènement</p>
-          </a>
-        </li>
-        <li>
-          <a href="realisation.html">
-            <p>Réalisation</p>
-          </a>
-        </li>
-        <li>
-          <a href="../tuto/tuto.html">
-            <p>Tuto</p>
-          </a>
-        </li>
-        <li>
-          <a href="../a_propos.html">
-            <p>&Agrave; propos</p>
-          </a>
-        </li>
-      </ul>
-      <div id="bar_recherche">
-        <form action="recherche" id="form_recherche">
-          <label for="loupe"></label>
+
+      <nav id="nav_controle_2">
+        <div id="nav_bar_deux">
+          <ul id="list_p_lien">
+            <li class="li_component">
+              <a href="../realisation/coups_de_coeur.html">
+                <div class="gap_li_cdc">Nos coups de coeur</div>
+                <div>
+                  <img
+                    class="size_image"
+                    src="../assets/img/Vcoeur.svg"
+                    alt="Un coeur" /></div
+              ></a>
+            </li>
+            <li class="li_component">
+              <a href="../realisation/technique.html#tricot">
+                <div class="gap_li">Tricot</div>
+                <div>
+                  <img
+                    class="size_image"
+                    src="../assets/img/Vcoeur.svg"
+                    alt="Un coeur" />
+                </div>
+              </a>
+            </li>
+            <li class="li_component">
+              <a href="../realisation/technique.html#couture">
+                <div class="gap_li">Couture</div>
+                <div>
+                  <img
+                    class="size_image"
+                    src="../assets/img/Vcoeur.svg"
+                    alt="Un coeur" />
+                </div>
+              </a>
+            </li>
+            <li class="li_component">
+              <a href="../realisation/technique.html#crochet">
+                <div class="gap_li">Crochet</div>
+                <div>
+                  <img
+                    class="size_image"
+                    src="../assets/img/Vcoeur.svg"
+                    alt="Un coeur" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex_component_forum">
+        <div id="bloc_post_forum">
+          <div class="flex_items_forum">
+            <p id="display_none">Titre:</p>
+            <form>
+              <label for="votre_titre" title="VOTRE TITRE"></label>
+              <input
+                type="text"
+                id="votre_titre"
+                name="votre_titre"
+                placeholder="Votre Titre..."
+                maxlength="40" />
+            </form>
+          </div>
+
+          <div class="flex_texte_forum">
+            <form>
+              <label for="zone_texte_forum" title="Zone de Texte"></label>
+              <textarea
+                id="zone_texte_forum"
+                name="zone de texte"
+                rows="5"
+                cols="5"
+                maxlength="200"
+                placeholder="Votre Question...">
+              </textarea>
+            </form>
+          </div>
+          <span class="flex_component_button">
+            <button class="button_submit_forum" type="button">
+              Envoyer
+              <img
+                class="send_png"
+                src="../assets/img/submit.png"
+                alt="envoyer" />
+            </button>
+          </span>
+        </div>
+      </div>
+
+      <div class="boite_soucis">
+        <p>
+          Des soucis de coutures ? <br />Ici vous trouverez les réponses à vos
+          questions.
+        </p>
+      </div>
+
+      <div id="bloc_search_forum">
+        <label for="loupe_for_label"></label>
+        <input
+          type="image"
+          src="../assets/img/Vector.png"
+          alt="icone de loupe"
+          id="loupe_for_label" />
+        <p>|</p>
+        <form>
+          <label for="search_nav"></label>
           <input
-            type="image"
-            src="../assets/img/Vector.png"
-            alt="icone de loupe"
-            id="loupe"
-          />
-          <p>|</p>
-          <label for="recherche"></label>
-          <input
+            id="search_nav"
+            title="Rechercher..."
             type="text"
-            id="recherche"
             placeholder="Rechercher..."
-            maxlength="50"
-          />
+            maxlength="18" />
         </form>
       </div>
-    </nav>
-  </header>
-  <main id="main_forum">
-    <div id="bloc_image_realisation">
-      <h1 id="titre_realisation">Forum</h1>
-      <img src="../assets/img/téléchargement.jpg" alt="machine de couture" id="image_page_realisation" />
-    </div>
 
-    <nav id="nav_controle_2">
-      <div id="nav_bar_deux">
-        <ul id="list_p_lien">
-          <div class="li_component">
-            <a href="../realisation/coups_de_coeur.html">
-              <li class="gap_li_cdc">Nos coups de coeur</li>
-              <li><img class="size_image" src="../assets/img/Vcoeur.svg" alt="Un coeur"></li>
-            </a>
-          </div>
-          <div class="li_component">
-            <a href="../realisation/technique.html#tricot">
-              <li class="gap_li">Tricot</li>
-              <li><img class="size_image" src="../assets/img/Vcoeur.svg" alt="Un coeur"></li>
-            </a>
-          </div>
-          <div class="li_component">
-            <a href="../realisation/technique.html#couture">
-              <li class="gap_li">Couture</li>
-              <li><img class="size_image" src="../assets/img/Vcoeur.svg" alt="Un coeur"></li>
-            </a>
-          </div>
-          <div class="li_component">
-            <a href="../realisation/technique.html#crochet">
-              <li class="gap_li">Crochet</li>
-              <li><img class="size_image" src="../assets/img/Vcoeur.svg" alt="Un coeur"></li>
-            </a>
-          </div>
-        </ul>
-      </div>
-    </nav>
-    <section class="flex_component_forum">
-      <div id="bloc_post_forum">
-        <span class="flex_items_forum">
-          <p id="display_none">Titre: </p>
-          <form>
-            <label for="votre_titre" title="VOTRE TITRE"></label>
-            <input type="text" id="votre_titre" name="votre_titre" placeholder="Votre Titre..." maxlength="40">
-          </form>
-        </span>
-
-        <span class="flex_texte_forum">
-          <form>
-            <label for="zone_texte_forum" title="Zone de Texte" minlength="8" maxlenght="250" required></label>
-            <textarea id="zone_texte_forum" name="zone de texte"
-          rows="5" cols="5" maxlength="200" placeholder="Votre Question...">
-            </textarea>
-          </form>
-        </span>
-        <span class="flex_component_button">
-          <button class="button_submit_forum" type="button">Envoyer
-            <img class="send_png" src="../assets/img/submit.png" alt="envoyer">
-          </button>
-        </span>
-    </section>
-    </div>
-
-    <div class="boite_soucis">
-      <h3>Des soucis de coutures ? <br>Ici vous trouverez les réponses à vos questions.</h3>
-    </div>
-
-    <div id="bloc_search_forum">
-      <label for="loupe"></label>
-            <input type="image" src="../assets/img/Vector.png" id="loupe"/>
-      <p>|</p>
-      <form>
-        <label for="search_nav"></label>
-        <input id="search_nav" title="Rechercher..." type="text" placeholder="Rechercher..." maxlength="18">
-      </form>
-    </div>
-
-    <section id="flex_bloc_qr">
-    <div class="bloc_question_reponse">
-        <h4 class="okay">Object...</h4>
-        <span class="flex_bloc_qr">
-        <div class="bloc_q_user"><p> Questions de l'utilisateur...</p></div>
-        <div class="bloc_qr"><p> Réponse...</p></div>
-        <div class="bloc_qr"><p> Réponse...</p></div>
-        </span>
-    </div>
-
-    <form class="formulaire_forum">
-      <label for="repondre"></label>
-      <input type="text" id="repondre" placeholder="Répondre" name="répondre" title="Répondre" maxlength="50">
-    <button class="bouton_envoyer_q">
-      <h5>Envoyer...</h5>
-      <img class="img_submit_q" src="../assets/img/submit.png" alt="bouton envoyer">
-    </button>
-  </form>
-    </section>
-
-    <section id="flex_bloc_qr">
-      <div class="bloc_question_reponse">
-          <h4 class="okay">Object...</h4>
-          <span class="flex_bloc_qr">
-          <div class="bloc_q_user"><p> Questions de l'utilisateur...</p></div>
-          <div class="bloc_qr"><p> Réponse...</p></div>
-          <div class="bloc_qr"><p> Réponse...</p></div>
-          </span>
-      </div>
-  
-      <form class="formulaire_forum">
-        <label for="repondre"></label>
-        <input type="text" id="repondre" placeholder="Répondre" name="répondre" title="Répondre"  maxlength="50">
-      <button class="bouton_envoyer_q">
-        <h5>Envoyer...</h5>
-        <img class="img_submit_q" src="../assets/img/submit.png" alt="bouton envoyer">
-      </button>
-    </form>
-      </section>
-
-      <section id="flex_bloc_qr">
+      <div class="flex_bloc">
         <div class="bloc_question_reponse">
-            <h4 class="okay">Object...</h4>
-            <span class="flex_bloc_qr">
-            <div class="bloc_q_user"><p> Questions de l'utilisateur...</p></div>
-            <div class="bloc_qr"><p> Réponse...</p></div>
-            <div class="bloc_qr"><p> Réponse...</p></div>
-            </span>
+          <p class="okay">Object...</p>
+          <div class="flex_bloc_qr">
+            <div class="bloc_q_user"><p>Questions de l'utilisateur...</p></div>
+            <div class="bloc_qr"><p>Réponse...</p></div>
+            <div class="bloc_qr"><p>Réponse...</p></div>
+          </div>
         </div>
-    
+
         <form class="formulaire_forum">
-          <label for="repondre"></label>
-          <input type="text" id="repondre" placeholder="Répondre" name="répondre" title="Répondre"  maxlength="50">
-        <button class="bouton_envoyer_q">
-          <h5>Envoyer...</h5>
-          <img class="img_submit_q" src="../assets/img/submit.png" alt="bouton envoyer">
-        </button>
-      </form>
-        </section>
+          <label for="repondre_1"></label>
+          <input
+            type="text"
+            id="repondre_1"
+            placeholder="Répondre"
+            name="répondre"
+            title="Répondre"
+            maxlength="50"
+            class="repondre" />
+          <button class="bouton_envoyer_q">
+            Envoyer...
+            <img
+              class="img_submit_q"
+              src="../assets/img/submit.png"
+              alt="bouton envoyer" />
+          </button>
+        </form>
+      </div>
 
-  </main>
-  <footer>
-    <nav id="footer_nav">
-      <div id="reseaux_sociaux">
-        <a href="https://fr-fr.facebook.com/reg/">
-          <img
-            src="../assets/img/facebook.png"
-            alt="logo facebook"
-            class="footer-img"
-          />
-        </a>
-        <a href="https://twitter.com/">
-          <img
-            src="../assets/img/tweeter.png"
-            alt="logo tweeter"
-            class="footer-img"
-          />
-        </a>
+      <div class="flex_bloc">
+        <div class="bloc_question_reponse">
+          <p class="okay">Object...</p>
+          <div class="flex_bloc_qr">
+            <div class="bloc_q_user"><p>Questions de l'utilisateur...</p></div>
+            <div class="bloc_qr"><p>Réponse...</p></div>
+            <div class="bloc_qr"><p>Réponse...</p></div>
+          </div>
+        </div>
+
+        <form class="formulaire_forum">
+          <label for="repondre_2"></label>
+          <input
+            type="text"
+            id="repondre_2"
+            placeholder="Répondre"
+            name="répondre"
+            title="Répondre"
+            maxlength="50"
+            class="repondre" />
+          <button class="bouton_envoyer_q">
+            Envoyer...
+            <img
+              class="img_submit_q"
+              src="../assets/img/submit.png"
+              alt="bouton envoyer" />
+          </button>
+        </form>
       </div>
-      <div>
-        <a href="../a_propos.html#contactez-nous" class="footer_circle">
-          <p>Contactez</p>
-          <p>Nous</p>
-        </a>
+
+      <div class="flex_bloc">
+        <div class="bloc_question_reponse">
+          <p class="okay">Object...</p>
+          <div class="flex_bloc_qr">
+            <div class="bloc_q_user"><p>Questions de l'utilisateur...</p></div>
+            <div class="bloc_qr"><p>Réponse...</p></div>
+            <div class="bloc_qr"><p>Réponse...</p></div>
+          </div>
+        </div>
+
+        <form class="formulaire_forum">
+          <label for="repondre_3"></label>
+          <input
+            type="text"
+            id="repondre_3"
+            placeholder="Répondre"
+            name="répondre"
+            title="Répondre"
+            maxlength="50"
+            class="repondre" />
+          <button class="bouton_envoyer_q">
+            Envoyer...
+            <img
+              class="img_submit_q"
+              src="../assets/img/submit.png"
+              alt="bouton envoyer" />
+          </button>
+        </form>
       </div>
-      <div>
-        <a href="../realisation/forum.html" class="footer_circle">
-          <p>Forum</p>
-          <img
-            src="../assets/img/forum.png"
-            alt="icone forum"
-            class="footer-img"
-          />
-        </a>
-      </div>
-      <div id="legislation">
-        <a
-          href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570/"
-        >
-          <p>Association à but non lucratif - Loi 1901</p>
-        </a>
-      </div>
-    </nav>
+    </main>
+    <footer>
+      <nav id="footer_nav">
+        <div id="reseaux_sociaux">
+          <a href="https://fr-fr.facebook.com/reg/">
+            <img
+              src="../assets/img/facebook.png"
+              alt="logo facebook"
+              class="footer-img" />
+          </a>
+          <a href="https://twitter.com/">
+            <img
+              src="../assets/img/tweeter.png"
+              alt="logo tweeter"
+              class="footer-img" />
+          </a>
+        </div>
+        <div>
+          <a href="../a_propos.html#contactez-nous" class="footer_circle">
+            <p>Contactez</p>
+            <p>Nous</p>
+          </a>
+        </div>
+        <div>
+          <a href="../realisation/forum.html" class="footer_circle">
+            <p>Forum</p>
+            <img
+              src="../assets/img/forum.png"
+              alt="icone forum"
+              class="footer-img" />
+          </a>
+        </div>
+        <div id="legislation">
+          <a
+            href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570/">
+            <p>Association à but non lucratif - Loi 1901</p>
+          </a>
+        </div>
+      </nav>
     </footer>
-</body>
-
+  </body>
 </html>
