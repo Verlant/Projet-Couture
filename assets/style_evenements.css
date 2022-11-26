@@ -39,6 +39,7 @@
   margin-left: 50px;
   color: var(--secondary-dark);
   font-size: 3em;
+  padding-top: 20px;
 }
 
 /* .even_planning img {
@@ -49,32 +50,49 @@
 
 /* Tableau Planning */
 
+
+/* td {
+  font-family: "Inter", sans-serif;
+}
+
+td {
+  font-family: "Courgette", sans-serif;
+} */
+
 .planning-table-container {
-  overflow-x: scroll;
   margin-bottom: 50px;
 }
 
 .planning-table {
   table-layout: fixed;
-  border: 1px solid black;
+  border: 1px solid var(--gold);
   border-collapse: collapse;
-  min-width: 520px;
-  width: 520px;
+  width: 1300px;
+  font-size: 0.65em;
+  background-color: var(--white);
+  margin-top: 20px;
+
 }
 
 .planning-table td {
-  height: 20px;
+  height: 42px;
   text-align: center;
-  border: 1px solid black;
+  border: 3px solid var(--secondary-dark);
+  font-family: "Inter", sans-serif;
+
 }
 
 .planning-table thead td,
 .planning-table .table-time {
-  text-align: start;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Courgette", sans-serif;
+
 }
 
 .planning-table-couture {
   background-color: #d9d2e9;
+
 }
 
 .planning-table-enfant,
@@ -265,7 +283,8 @@
   justify-content: center;
   margin-right: 85px;
 }
-.position_cadre_note_horraires{
+
+.position_cadre_note_horraires {
   position: relative;
 
 }
@@ -739,24 +758,40 @@
 
   .cadre_planning {
     width: 370px;
-    height: 188px;
+    height: 207px;
     background-color: var(--primary-color);
-    margin-top: 24px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 10px;
+    padding-top: 15px;
   }
 
   .titre_planning {
-    display: none;
+    font-size: 0.25em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
   }
 
-  .even_planning img {
-    width: 336px;
-    height: 167px;
-    border-radius: 0%;
+  /* Tableau Planning */
+  .planning-table-container {
+    margin-bottom: 5px;
+    font-size: 0.34em;
+  }
 
+  .planning-table {
+    width: 360px;
+    height: 180px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+  }
+
+  .planning-table td {
+    height: 8px;
+    border: 1.4px solid var(--secondary-dark);
   }
 
   .fond_exceptionnel {
@@ -782,7 +817,7 @@
     font-size: 0.9em;
     justify-content: center;
     left: 14px;
-    top: 240px;
+    top: 270px;
   }
 
   .cadre_nos h1 {
@@ -808,9 +843,9 @@
     padding-top: 8px;
   }
 
-  .position_cadre_note_horraires{
+  .position_cadre_note_horraires {
     position: relative;
-  
+
   }
 
   .note_horraires {
