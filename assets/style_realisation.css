@@ -233,7 +233,7 @@
   filter: none;
 }
 
-#titre_crochet {
+.titre_crochet {
   width: 273px;
   height: 51px;
   margin-left: 40px;
@@ -414,7 +414,7 @@
   font-size: 1.2em;
 }
 
-#flex_bloc_qr {
+.flex_bloc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,7 +499,7 @@
   color: var(--gold);
 }
 
-#repondre {
+.repondre {
   width: 700px;
   height: 60px;
   background-color: var(--secondary-color);
@@ -735,7 +735,7 @@
     height: 500px;
   }
 
-  #repondre {
+  .repondre {
     width: 220px;
     height: 60px;
     font-size: 1.6em;
@@ -759,7 +759,7 @@
     width: 390px;
   }
 
-  #titre_crochet {
+  .titre_crochet {
     transform: translate(-5px, -30px);
   }
 
@@ -779,5 +779,9 @@
   .titre_image_real {
     margin-top: 25px;
     margin-bottom: 50px;
+  }
+  #loupe_for_label {
+    width: 20px;
+    height: 19.2px;
   }
 }
