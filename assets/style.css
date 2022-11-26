@@ -166,7 +166,6 @@ a {
 
 /* général */
 body {
-  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,7 +327,7 @@ footer {
   width: 1100px;
   height: calc(227px / 2);
   background-color: var(--secondary-color);
-  border-radius: 50px;
+  border-radius: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -684,123 +683,153 @@ footer {
   /* end header */
   /* *************************************************************************************************************************** */
   /* ************************************************* MEDIA QUERIES ********************************************************** */
-  @media screen and (max-width: 390px) {
-    main {
-      height: auto;
-      width: 390px;
-    }
+  main {
+    height: auto;
+    width: 390px;
+  }
 
-    #bloc_desc {
-      background-color: var(--primary-light);
-      width: 390px;
-      height: 150px;
-      margin-top: 20px;
-      display: block;
-    }
-    #presentation {
-      width: 370px;
-      height: 143px;
-      gap: 0px;
-      margin-left: 10px;
-      margin-top: 50px;
-    }
+  #bloc_desc {
+    background-color: var(--primary-light);
+    width: 390px;
+    height: 150px;
+    margin-top: 20px;
+    display: block;
+  }
+  #presentation {
+    width: 370px;
+    height: 180px;
+    gap: 0px;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+  }
 
-    .text_gold {
-      font-size: 1em;
-    }
+  .text_gold {
+    font-size: 1em;
+  }
 
-    .text_white {
-      font-size: 0.6em;
-    }
+  .text_white {
+    font-size: 0.6em;
+    line-height: 0.75rem;
+    margin: 0 15px;
+  }
 
-    #article_media {
-      width: 163px;
-      height: 102px;
-      margin-left: 25px;
-      border-radius: 20px;
-      transform: translate(0px, -169px);
-    }
+  #article_media {
+    width: 163px;
+    height: 120px;
+    margin-left: 15px;
+    background-color: var(--primary-dark);
+    border: 1px solid var(--secondary-dark);
+    border-radius: 15px;
+    transform: translate(0px, -182px);
+  }
 
-    #bouton_bouton_play {
-      width: 50px;
-      height: 50px;
-    }
+  #article_media > p {
+    order: 2;
+  }
 
-    #calendrier {
-      width: 163px;
-      height: 102px;
-    }
+  #bouton_bouton_play {
+    width: 50px;
+    height: 50px;
+    order: 1;
+  }
 
-    #calendrier_index {
-      width: 163px;
-      height: 102px;
-      transform: translate(210px, 95px);
-    }
+  #calendrier {
+    width: 163px;
+    height: 120px;
+  }
 
-    #objectifs {
-      flex-direction: row-reverse;
-      background-color: var(--primary-color);
-      height: 175px;
-      display: block;
-      margin-top: 50px;
-    }
+  #calendrier_index {
+    width: 163px;
+    height: 120px;
+    transform: translate(205px, 46px);
+  }
 
-    #objectifs_texte {
-      width: 371px;
-      height: 207px;
-      transform: translate(10px, 260px);
-    }
+  #objectifs {
+    display: block;
+    width: 370px;
+    height: 175px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
 
-    #section_realisation {
-      background-color: var(--primary-light);
-      width: 390px;
-      height: 550px;
-      margin-top: 500px;
-    }
+  #objectifs_texte {
+    width: 370px;
+    height: 207px;
+    transform: translate(0px, 200px);
+    background-color: var(--secondary-dark);
+    border-radius: 10px;
+    gap: 0;
+  }
 
-    #der_realisation {
-      width: 280px;
-      height: 159px;
-      transform: translate(0px, 215px);
-    }
+  #objectifs_texte > h1 {
+    font-size: 1.6rem;
+  }
 
-    .img_der {
-      width: 50px;
-      height: 50px;
-    }
+  #section_realisation {
+    background-color: var(--primary-light);
+    width: 390px;
+    height: 150px;
+    margin-top: 500px;
+  }
 
-    #section_realisation {
-      justify-content: space-between;
-      height: 200px;
-    }
+  #der_realisation {
+    width: 280px;
+    height: 159px;
+    transform: translate(0px, 215px);
+    border-radius: 10px;
+    gap: 28px;
+  }
 
-    #center_realisation {
-      justify-content: space-around;
-      transform: translate(0px, -330px);
-      height: 250px;
-    }
+  #der_realisation > p {
+    line-height: 20px;
+    font-size: 0.75rem;
+    margin: 0;
+    align-self: center;
+  }
 
-    #fleche_droite {
-      width: 25px;
-      height: 38px;
-      transform: translate(-5px, -60px);
-    }
+  #like_realisation {
+    padding-right: 20px;
+  }
 
-    #fleche_gauche {
-      width: 25px;
-      height: 38px;
-      transform: translate(10px, -60px);
-    }
+  .img_der {
+    width: 40px;
+    height: 40px;
+  }
 
-    #espace_commentaire {
-      width: 187px;
-      height: 38px;
-      margin-left: 10px;
-      padding-left: 3px;
-      font-size: 0.8em;
-      justify-content: start;
-      transform: translate(0, 230px);
-    }
+  #section_realisation {
+    height: 200px;
+    margin-top: 280px;
+  }
+
+  #center_realisation {
+    transform: translate(0px, -230px);
+    height: 250px;
+  }
+
+  #fleche_droite {
+    width: 25px;
+    height: 38px;
+    margin-bottom: 90px;
+  }
+
+  #fleche_gauche {
+    width: 25px;
+    height: 38px;
+    margin-bottom: 90px;
+  }
+
+  #espace_commentaire {
+    width: 187px;
+    height: 38px;
+    margin-left: 0px;
+    padding-left: 3px;
+    font-size: 0.8em;
+    transform: translate(0px, 210px);
+    background-color: var(--secondary-dark);
+    border-radius: 5px;
   }
 
   /* *************************************************************************************************************************** */
@@ -814,10 +843,11 @@ footer {
   #footer_nav {
     width: 370px;
     height: 60px;
+    border-radius: 10px;
   }
 
   #footer_nav p {
-    font-size: 0.35rem;
+    font-size: 0.5rem;
   }
 
   #reseaux_sociaux {
@@ -831,16 +861,17 @@ footer {
   }
 
   .footer_circle {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
+    gap: 2px;
   }
 
   #legislation {
     width: 98px;
     height: 36px;
   }
-  #legislation > a > p {
-    font-size: 0.45rem;
-  }
+  /* #legislation > a > p {
+    font-size: 0.5rem;
+  } */
   /* end footer */
 }
