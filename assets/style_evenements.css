@@ -398,16 +398,25 @@
 }
 
 .note_horaires {
-  columns: var(--secondary-dark);
-  display: flex;
-  justify-content: center;
+  width: 1340px;
+  height: 61px;
+  background-color: var(--white);
+  color: var(--secondary-dark);
   font-size: 1.5em;
   font-style: italic;
   margin-top: 60px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.note_horaires p {
+  margin-top: 20px;
+
 }
 
 .atelier_exceptionnel {
-  width: 1340px;
+  width: 1300px;
   height: 465px;
   margin-bottom: 50px;
   margin-left: 50px;
@@ -449,7 +458,7 @@
 }
 
 .fond_atelier {
-  width: 868px;
+  width: 828px;
   height: 160px;
   background-color: var(--gold);
   margin-left: 60px;
@@ -476,6 +485,7 @@
 }
 
 .description_atelier {
+  width: 810px;
   font-size: 2em;
   margin-top: 50px;
   margin-left: 60px;
@@ -659,7 +669,7 @@
   height: 59px;
 }
 
-.images_porte_ouverte > .photo1,
+.images_porte_ouverte>.photo1,
 .photo2,
 .photo3 {
   width: 307px;
@@ -1008,9 +1018,19 @@
     border-top: 10px solid var(--gold);
   }
 
+
   .note_horaires {
+    width: 370px;
+    height: 21px;
+    font-size: 1.5em;
+    margin-left: 10px;
     font-size: 0.5em;
     margin-top: 15px;
+  }
+
+  .note_horaires p {
+    margin-top: 6px;
+
   }
 
   .atelier_exceptionnel {
@@ -1052,10 +1072,11 @@
   }
 
   .description_atelier {
+    width: 225px;
     font-size: 0.6em;
     margin-top: 15px;
     margin-left: 10px;
-    text-align: justify;
+    text-align: left;
     line-height: 110%;
   }
 
