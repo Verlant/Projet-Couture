@@ -248,9 +248,11 @@ a:hover {
   z-index: -1;
   transition: opacity 0.1s, height 1.5s;
 }
+
 .invert_border_right {
   right: -30px;
 }
+
 .invert_border_left {
   right: 90px;
 }
@@ -266,7 +268,7 @@ a:hover {
   color: var(--white);
 }
 
-#pages > a:hover {
+#pages>a:hover {
   color: var(--gold);
 }
 
@@ -288,7 +290,7 @@ a:hover {
   width: calc(225px / 1.5);
 }
 
-#form_recherche > p {
+#form_recherche>p {
   height: 20px;
   margin-left: 5px;
   margin-top: 5px;
@@ -309,6 +311,7 @@ a:hover {
   width: 20px;
   height: 20px;
 }
+
 /* fin header */
 
 /* *************************************************************************************************************************** */
@@ -378,6 +381,7 @@ footer {
   align-items: center;
   text-align: center;
 }
+
 /* fin footer */
 
 /* Fin général */
@@ -420,7 +424,120 @@ footer {
 
 #calendrier {
   width: 397px;
-  height: 382px;
+  height: 380px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#calendrier h2 {
+  font-size: 2em;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--secondary-dark);
+}
+
+.tableau_calendrier {
+  width: 370px;
+  height: 170px;
+  display: grid;
+  margin-bottom: 70px;
+  margin-left: 5px;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 50px 40px 30px 50px 40px;
+  grid-template-areas:
+    "mois1  calendrie_titre1"
+    "mois_date1  debut_evenement1"
+    ". ."
+    "mois2  calendrie_titre2"
+    "mois_date2  debut_evenement2";
+  text-align: center;
+}
+
+.mois1 {
+  grid-area: mois1;
+}
+
+.mois_date1 {
+  grid-area: mois_date1;
+}
+
+.calendrie_titre1 {
+  grid-area: calendrie_titre1;
+  margin-top: 20px;
+
+}
+
+.debut_evenement1 {
+  grid-area: debut_evenement1;
+}
+
+.mois2 {
+  grid-area: mois2;
+}
+
+.mois_date2 {
+  grid-area: mois_date2;
+}
+
+.calendrie_titre2 {
+  grid-area: calendrie_titre2;
+  margin-top: 20px;
+
+}
+
+.debut_evenement2 {
+  grid-area: debut_evenement2;
+}
+
+.tableau_calendrier div p {
+  font-size: 1.1em;
+  color: var(--secondary-dark);
+  font-weight: bold;
+}
+
+#tous_les_evenements {
+  border: 2px solid var(--secondary-color);
+  border-radius: 50px;
+  width: 270px;
+  height: 50px;
+  background-color: none;
+  margin-left: 60px;
+  font-family: 'inter', 'sans serif';
+  font-size: 1.1em;
+  color: var(--secondary-light);
+}
+
+#mois {
+  width: 90px;
+  height: 50px;
+  background-color: var(--gold);
+  text-align: center;
+  font-size: 1em;
+  font-family: "inter", "sans serif";
+  border-radius: 10px 10px 0px 0px;
+  color: var(--secondary-dark);
+  font-weight: bold;
+  border: 3px solid var(--secondary-light);
+
+}
+
+#mois_date {
+  width: 90px;
+  height: 30px;
+  background-color: var(--gold);
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: -3px;
+  font-size: 1.5em;
+  font-family: "inter", "sans serif";
+  color: var(--secondary-dark);
+  border: 3px solid var(--secondary-light);
+
 }
 
 #objectifs {
@@ -494,7 +611,7 @@ footer {
   gap: 50px;
 }
 
-#der_realisation > p {
+#der_realisation>p {
   justify-self: center;
   align-self: center;
 }
@@ -530,6 +647,7 @@ footer {
 /* start Version Mobile */
 
 @media screen and (max-width: 391px) {
+
   /* start header */
   header {
     width: 390px;
@@ -553,6 +671,7 @@ footer {
     width: 33px;
     height: 28px;
   }
+
   #pages {
     visibility: hidden;
     overflow: hidden;
@@ -562,7 +681,8 @@ footer {
     color: var(--primary-light);
     transition: height 1s, color 0s;
   }
-  #pages ~ a:hover {
+
+  #pages~a:hover {
     filter: opacity(0.8);
   }
 
@@ -610,7 +730,7 @@ footer {
     cursor: pointer;
   }
 
-  #hidden:checked ~ #pages {
+  #hidden:checked~#pages {
     width: 90px;
     height: 90px;
     border-bottom-left-radius: 20px;
@@ -628,7 +748,8 @@ footer {
     top: 68px;
     z-index: 1;
   }
-  #hidden:checked ~ .invert_border_right {
+
+  #hidden:checked~.invert_border_right {
     visibility: visible;
     height: 30px;
     width: 30px;
@@ -639,7 +760,8 @@ footer {
     opacity: 1;
     z-index: 2;
   }
-  #hidden:checked ~ .invert_border_left {
+
+  #hidden:checked~.invert_border_left {
     visibility: visible;
     height: 30px;
     width: 30px;
@@ -650,7 +772,8 @@ footer {
     opacity: 1;
     z-index: 2;
   }
-  #pages + li {
+
+  #pages+li {
     position: relative;
   }
 
@@ -664,7 +787,7 @@ footer {
     margin-right: 5px;
   }
 
-  #form_recherche > p {
+  #form_recherche>p {
     height: 20px;
   }
 
@@ -689,12 +812,14 @@ footer {
   }
 
   #bloc_desc {
+    position: relative;
     background-color: var(--primary-light);
     width: 390px;
     height: 150px;
     margin-top: 20px;
     display: block;
   }
+
   #presentation {
     width: 370px;
     height: 180px;
@@ -702,6 +827,85 @@ footer {
     margin-left: 10px;
     margin-top: 25px;
     border-radius: 10px;
+  }
+
+  #calendrier {
+    position: absolute;
+    width: 164.6px;
+    height: 121.6px;
+    border-radius: 15px;
+    justify-content: space-between;
+    left: 205px;
+    top: 226px;
+
+  }
+
+  #calendrier h2 {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+
+  .tableau_calendrier {
+    position: absolute;
+    width: 155px;
+    height: 150px;
+    display: grid;
+    margin-left: 3px;
+    grid-template-columns: 38px 1fr;
+    grid-template-rows: 20px 10px 8px 20px 10px;
+    grid-template-areas:
+      "mois1  calendrie_titre1"
+      "mois_date1  debut_evenement1"
+      ". ."
+      "mois2  calendrie_titre2"
+      "mois_date2  debut_evenement2";
+    text-align: center;
+    top: 23px;
+  }
+
+  .calendrie_titre1 {
+    margin-top: 8px;
+
+  }
+
+  .calendrie_titre2 {
+    margin-top: 8px;
+
+  }
+
+
+  .tableau_calendrier div p {
+    font-size: 0.47em;
+    font-weight: bold;
+  }
+
+  #tous_les_evenements {
+    border-radius: 8px;
+    width: 100px;
+    height: 18px;
+    background-color: none;
+    margin-left: 35px;
+    font-size: 0.4em;
+    margin-bottom: 5px;
+  }
+
+  #mois {
+    width: 30px;
+    height: 17px;
+    font-size: 0.37em;
+    border-radius: 5px 5px 0px 0px;
+    border: 2px solid var(--secondary-light);
+
+  }
+
+  #mois_date {
+    width: 30px;
+    height: 7px;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 0px;
+    font-size: 0.5em;
+    border: 2px solid var(--secondary-light);
+
   }
 
   .text_gold {
@@ -724,7 +928,7 @@ footer {
     transform: translate(0px, -182px);
   }
 
-  #article_media > p {
+  #article_media>p {
     order: 2;
   }
 
@@ -732,11 +936,6 @@ footer {
     width: 50px;
     height: 50px;
     order: 1;
-  }
-
-  #calendrier {
-    width: 163px;
-    height: 120px;
   }
 
   #calendrier_index {
@@ -764,7 +963,7 @@ footer {
     gap: 0;
   }
 
-  #objectifs_texte > h1 {
+  #objectifs_texte>h1 {
     font-size: 1.6rem;
   }
 
@@ -783,7 +982,7 @@ footer {
     gap: 28px;
   }
 
-  #der_realisation > p {
+  #der_realisation>p {
     line-height: 20px;
     font-size: 0.75rem;
     margin: 0;
@@ -870,6 +1069,7 @@ footer {
     width: 98px;
     height: 36px;
   }
+
   /* #legislation > a > p {
     font-size: 0.5rem;
   } */
