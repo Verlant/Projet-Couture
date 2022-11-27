@@ -439,9 +439,6 @@ footer {
   color: var(--secondary-dark);
 }
 
-#calendrier > a {
-}
-
 .tableau_calendrier {
   width: 370px;
   height: 170px;
