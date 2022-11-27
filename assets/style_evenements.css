@@ -1,25 +1,5 @@
 @import url(style.css);
 
-
-
-
-/* #bar_recherche {
-  width: 129.6px;
-  height: 43.6px;
-}
-
-#form_recherche {
-  width: 115px;
-  height: 25px;
-}
-
-#recherche {
-  width: 57px;
-  height: 22px;
-} */
-
-
-
 /* ************************************************************************* */
 /* Début Version Desktop ******************************************************/
 /* ************************************************************************* */
@@ -427,7 +407,6 @@
 
 .note_horaires p {
   margin-top: 20px;
-
 }
 
 .atelier_exceptionnel {
@@ -508,6 +487,26 @@
 
 .fond_light {
   background-color: var(--secondary-light);
+}
+
+.lien_vers_page_even_marquants {
+  width: 1000px;
+  height: 100px;
+  background-color: var(--white);
+  margin: 0 0 50px 220px;
+  font-size: 3.5rem;
+  color: var(--secondary-dark);
+  font-weight: bold;
+  border: 4mm ridge var(--secondary-light);
+  border-radius: 10px;
+}
+
+.lien_vers_page_even_marquants > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Fin Page Nos ateliers ******************************************************/
@@ -684,7 +683,7 @@
   height: 59px;
 }
 
-.images_porte_ouverte>.photo1,
+.images_porte_ouverte > .photo1,
 .photo2,
 .photo3 {
   width: 307px;
@@ -701,11 +700,6 @@
 /* Début Version mobile ******************************************************/
 /* ************************************************************************* */
 @media screen and (max-width: 391px) {
-  #recherche {
-    width: 52px;
-    height: 22px;
-  }
-
   /* general */
   main {
     width: 390px;
@@ -905,8 +899,6 @@
     font-size: 1em;
     margin-top: 40px;
     color: var(--gold);
-
-
   }
 
   .atelier_creation {
@@ -1033,7 +1025,6 @@
     border-top: 10px solid var(--gold);
   }
 
-
   .note_horaires {
     width: 370px;
     height: 21px;
@@ -1045,7 +1036,6 @@
 
   .note_horaires p {
     margin-top: 6px;
-
   }
 
   .atelier_exceptionnel {
@@ -1093,6 +1083,14 @@
     margin-left: 10px;
     text-align: left;
     line-height: 110%;
+  }
+
+  .lien_vers_page_even_marquants {
+    width: 270px;
+    height: 25px;
+    margin: 0 0 0 55px;
+    font-size: 1rem;
+    border: 2mm ridge var(--secondary-light);
   }
 
   /* Version _ Mobile _ Fin Page Nos ateliers **********************************************************/
