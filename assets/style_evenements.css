@@ -488,7 +488,6 @@
 .fond_light {
   background-color: var(--secondary-light);
 }
-
 .lien_vers_page_even_marquants {
   width: 1000px;
   height: 100px;
@@ -508,7 +507,6 @@
   justify-content: center;
   align-items: center;
 }
-
 /* Fin Page Nos ateliers ******************************************************/
 
 /* Début Page Évènements et moments marquant ******************************************************/
@@ -1085,6 +1083,13 @@
     margin-left: 10px;
     text-align: left;
     line-height: 110%;
+  }
+  .lien_vers_page_even_marquants {
+    width: 270px;
+    height: 25px;
+    margin: 0 0 0 55px;
+    font-size: 1rem;
+    border: 2mm ridge var(--secondary-light);
   }
 
   .lien_vers_page_even_marquants {
