@@ -704,7 +704,10 @@
   main {
     width: 390px;
   }
-
+  /* .main_even_hauteur {
+    height: 982px;
+    width: 390px;
+  } */
   /* Version _ Mobile _ Début Page Évènements **********************************************************/
   .cadre_triangle_even_exep {
     position: relative;
@@ -937,7 +940,7 @@
   /* Version _ Mobile _ Début Page Nos ateliers **********************************************************/
 
   .triangle_nos_ateliers1 {
-    margin-top: 1px;
+    margin-top: 10px;
     margin-left: 10px;
     border-left: 185px solid transparent;
     border-right: 185px solid transparent;
